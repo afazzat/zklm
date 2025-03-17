@@ -1,0 +1,1973 @@
+2025-03-17 00:16:15,015 - medical_diagnosis - INFO - Results will be saved to: /home/afazzat/Desktop/zkml/results/run_20250317_001615
+2025-03-17 00:16:15,016 - medical_diagnosis - INFO - Loading zkml modules...
+2025-03-17 00:16:16,450 - medical_diagnosis - INFO - Setting random seeds...
+2025-03-17 00:16:16,451 - medical_diagnosis - INFO - Starting federated learning with 3 parties, 50 rounds
+2025-03-17 00:16:16,451 - medical_diagnosis - INFO - Parameters: batch_size=128, samples=5000, lr=0.001, dp_epsilon=3.0
+2025-03-17 00:16:16,451 - medical_diagnosis - INFO - Generating 5000 synthetic medical data samples...
+2025-03-17 00:16:16,462 - medical_diagnosis - INFO - Data generated. Features shape: (5000, 33), Labels shape: (5000,)
+2025-03-17 00:16:16,462 - medical_diagnosis - INFO - Class distribution: [4000 1000]
+2025-03-17 00:16:16,462 - medical_diagnosis - INFO - Standardizing features...
+2025-03-17 00:16:16,468 - medical_diagnosis - INFO - Splitting data among 3 parties...
+2025-03-17 00:16:16,480 - medical_diagnosis - ERROR - Error in main function: index 3522 is out of bounds for axis 0 with size 1334
+2025-03-17 00:16:48,673 - medical_diagnosis - INFO - Results will be saved to: /home/afazzat/Desktop/zkml/results/run_20250317_001648
+2025-03-17 00:16:48,673 - medical_diagnosis - INFO - Loading zkml modules...
+2025-03-17 00:16:50,069 - medical_diagnosis - INFO - Setting random seeds...
+2025-03-17 00:16:50,070 - medical_diagnosis - INFO - Starting federated learning with 3 parties, 50 rounds
+2025-03-17 00:16:50,070 - medical_diagnosis - INFO - Parameters: batch_size=128, samples=5000, lr=0.001, dp_epsilon=3.0
+2025-03-17 00:16:50,070 - medical_diagnosis - INFO - Generating 5000 synthetic medical data samples...
+2025-03-17 00:16:50,079 - medical_diagnosis - INFO - Data generated. Features shape: (5000, 33), Labels shape: (5000,)
+2025-03-17 00:16:50,080 - medical_diagnosis - INFO - Class distribution: [4000 1000]
+2025-03-17 00:16:50,080 - medical_diagnosis - INFO - Standardizing features...
+2025-03-17 00:16:50,086 - medical_diagnosis - INFO - Splitting data among 3 parties...
+2025-03-17 00:16:50,095 - medical_diagnosis - INFO - Party 1 data shape: (1333, 33), labels shape: (1333,), class distribution: [1066  267]
+2025-03-17 00:16:50,098 - medical_diagnosis - INFO - Party 2 data shape: (1333, 33), labels shape: (1333,), class distribution: [1067  266]
+2025-03-17 00:16:50,098 - medical_diagnosis - INFO - Party 3 data shape: (1334, 33), labels shape: (1334,), class distribution: [1067  267]
+2025-03-17 00:16:50,099 - medical_diagnosis - INFO - Test data shape: (1000, 33), labels shape: (1000,)
+2025-03-17 00:16:50,100 - medical_diagnosis - INFO - Initializing model...
+2025-03-17 00:16:50,204 - medical_diagnosis - INFO - Model parameters: 3718658
+2025-03-17 00:16:50,205 - medical_diagnosis - INFO - Initializing federated learner...
+2025-03-17 00:16:50,205 - zkml.federated - INFO - Initialized SecureFederatedLearner with 3 parties
+2025-03-17 00:16:50,205 - zkml.federated - INFO - DP parameters: epsilon=3.0, delta=1e-05
+2025-03-17 00:16:50,206 - zkml.federated - INFO - Secure aggregation: True
+2025-03-17 00:16:50,206 - medical_diagnosis - INFO - Starting federated training...
+2025-03-17 00:16:50,206 - medical_diagnosis - INFO - Starting round 1/50
+2025-03-17 00:16:50,206 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:16:50,207 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:16:50,215 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:16:51,572 - zkml.federated - INFO - Epoch 1/3 - Loss: 9.0823
+2025-03-17 00:16:52,792 - zkml.federated - INFO - Epoch 2/3 - Loss: 1.6170
+2025-03-17 00:16:53,908 - zkml.federated - INFO - Epoch 3/3 - Loss: 1.1477
+2025-03-17 00:16:54,030 - zkml.federated - INFO - Local update computed in 3.82 seconds
+2025-03-17 00:16:54,030 - zkml.federated - INFO - Average loss: 3.9490, DP noise scale: 0.016149
+2025-03-17 00:16:54,038 - medical_diagnosis - INFO - Party 1 computed update with loss: 3.9490, noise scale: 0.016149
+2025-03-17 00:16:54,039 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:16:54,040 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:16:54,040 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:16:54,041 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:16:54,044 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:16:55,354 - zkml.federated - INFO - Epoch 1/3 - Loss: 3.4431
+2025-03-17 00:16:56,519 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.9853
+2025-03-17 00:16:57,624 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.7149
+2025-03-17 00:16:57,731 - zkml.federated - INFO - Local update computed in 3.69 seconds
+2025-03-17 00:16:57,731 - zkml.federated - INFO - Average loss: 1.7144, DP noise scale: 0.016149
+2025-03-17 00:16:57,732 - medical_diagnosis - INFO - Party 2 computed update with loss: 1.7144, noise scale: 0.016149
+2025-03-17 00:16:57,733 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:16:57,733 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:16:57,733 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:16:57,734 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:16:57,736 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:16:58,816 - zkml.federated - INFO - Epoch 1/3 - Loss: 1.8251
+2025-03-17 00:17:00,102 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.5673
+2025-03-17 00:17:01,320 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4861
+2025-03-17 00:17:01,439 - zkml.federated - INFO - Local update computed in 3.70 seconds
+2025-03-17 00:17:01,439 - zkml.federated - INFO - Average loss: 0.9595, DP noise scale: 0.016149
+2025-03-17 00:17:01,440 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.9595, noise scale: 0.016149
+2025-03-17 00:17:01,440 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:17:01,441 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:17:01,441 - medical_diagnosis - INFO - Average loss for round 1: 2.2076
+2025-03-17 00:17:01,441 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:17:01,442 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:17:01,442 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:17:01,467 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:17:01,467 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:17:01,467 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:17:01,514 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_1.pt
+2025-03-17 00:17:01,515 - zkml.federated - INFO - Update applied, completed round 1
+2025-03-17 00:17:01,515 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:17:01,515 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:17:01,677 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.5200768775939941, 'accuracy': 0.7609999775886536, 'precision': 0.45537757437060516, 'recall': 0.9949999999995026, 'f1_score': 0.6248037676176357, 'true_positives': 199, 'false_positives': 238, 'false_negatives': 1, 'true_negatives': 562}
+2025-03-17 00:17:01,678 - medical_diagnosis - INFO - Round 1 metrics: {'loss': 0.5200768775939941, 'accuracy': 0.7609999775886536, 'precision': 0.45537757437060516, 'recall': 0.9949999999995026, 'f1_score': 0.6248037676176357, 'true_positives': 199, 'false_positives': 238, 'false_negatives': 1, 'true_negatives': 562}
+2025-03-17 00:17:03,275 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:17:03,302 - medical_diagnosis - INFO - New best model saved (accuracy: 0.7610, F1: 0.6248)
+2025-03-17 00:17:03,303 - medical_diagnosis - INFO - Round 1 completed in 13.10 seconds
+2025-03-17 00:17:03,303 - medical_diagnosis - INFO - Starting round 2/50
+2025-03-17 00:17:03,303 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:17:03,303 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:17:03,305 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:17:04,390 - zkml.federated - INFO - Epoch 1/3 - Loss: 1.1216
+2025-03-17 00:17:05,537 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4483
+2025-03-17 00:17:06,750 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3767
+2025-03-17 00:17:06,857 - zkml.federated - INFO - Local update computed in 3.55 seconds
+2025-03-17 00:17:06,858 - zkml.federated - INFO - Average loss: 0.6489, DP noise scale: 0.016149
+2025-03-17 00:17:06,859 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.6489, noise scale: 0.016149
+2025-03-17 00:17:06,859 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:17:06,859 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:17:06,860 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:17:06,860 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:17:06,863 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:17:08,005 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.9578
+2025-03-17 00:17:09,073 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.5582
+2025-03-17 00:17:10,152 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4981
+2025-03-17 00:17:10,265 - zkml.federated - INFO - Local update computed in 3.40 seconds
+2025-03-17 00:17:10,265 - zkml.federated - INFO - Average loss: 0.6714, DP noise scale: 0.016149
+2025-03-17 00:17:10,266 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.6714, noise scale: 0.016149
+2025-03-17 00:17:10,266 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:17:10,267 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:17:10,267 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:17:10,268 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:17:10,270 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:17:11,314 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.8739
+2025-03-17 00:17:12,447 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.3829
+2025-03-17 00:17:13,564 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3304
+2025-03-17 00:17:13,679 - zkml.federated - INFO - Local update computed in 3.41 seconds
+2025-03-17 00:17:13,680 - zkml.federated - INFO - Average loss: 0.5290, DP noise scale: 0.016149
+2025-03-17 00:17:13,680 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.5290, noise scale: 0.016149
+2025-03-17 00:17:13,681 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:17:13,681 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:17:13,682 - medical_diagnosis - INFO - Average loss for round 2: 0.6164
+2025-03-17 00:17:13,682 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:17:13,682 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:17:13,682 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:17:13,709 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:17:13,713 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:17:13,714 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:17:13,757 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_2.pt
+2025-03-17 00:17:13,758 - zkml.federated - INFO - Update applied, completed round 2
+2025-03-17 00:17:13,758 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:17:13,758 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:17:13,923 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.17524720597267152, 'accuracy': 0.9359999895095825, 'precision': 0.7857142857139556, 'recall': 0.9349999999995325, 'f1_score': 0.8538812784887994, 'true_positives': 187, 'false_positives': 51, 'false_negatives': 13, 'true_negatives': 749}
+2025-03-17 00:17:13,923 - medical_diagnosis - INFO - Round 2 metrics: {'loss': 0.17524720597267152, 'accuracy': 0.9359999895095825, 'precision': 0.7857142857139556, 'recall': 0.9349999999995325, 'f1_score': 0.8538812784887994, 'true_positives': 187, 'false_positives': 51, 'false_negatives': 13, 'true_negatives': 749}
+2025-03-17 00:17:15,060 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:17:15,100 - medical_diagnosis - INFO - New best model saved (accuracy: 0.9360, F1: 0.8539)
+2025-03-17 00:17:15,100 - medical_diagnosis - INFO - Round 2 completed in 11.80 seconds
+2025-03-17 00:17:15,100 - medical_diagnosis - INFO - Starting round 3/50
+2025-03-17 00:17:15,101 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:17:15,101 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:17:15,103 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:17:16,138 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.7704
+2025-03-17 00:17:17,287 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4958
+2025-03-17 00:17:18,388 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3301
+2025-03-17 00:17:18,487 - zkml.federated - INFO - Local update computed in 3.39 seconds
+2025-03-17 00:17:18,488 - zkml.federated - INFO - Average loss: 0.5321, DP noise scale: 0.016149
+2025-03-17 00:17:18,488 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.5321, noise scale: 0.016149
+2025-03-17 00:17:18,489 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:17:18,489 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:17:18,490 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:17:18,490 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:17:18,493 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:17:19,629 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.7949
+2025-03-17 00:17:20,650 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.3713
+2025-03-17 00:17:21,666 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3291
+2025-03-17 00:17:21,766 - zkml.federated - INFO - Local update computed in 3.27 seconds
+2025-03-17 00:17:21,766 - zkml.federated - INFO - Average loss: 0.4984, DP noise scale: 0.016149
+2025-03-17 00:17:21,767 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.4984, noise scale: 0.016149
+2025-03-17 00:17:21,767 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:17:21,768 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:17:21,768 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:17:21,769 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:17:21,771 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:17:22,852 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.6990
+2025-03-17 00:17:24,090 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.3507
+2025-03-17 00:17:25,252 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3432
+2025-03-17 00:17:25,361 - zkml.federated - INFO - Local update computed in 3.59 seconds
+2025-03-17 00:17:25,362 - zkml.federated - INFO - Average loss: 0.4643, DP noise scale: 0.016149
+2025-03-17 00:17:25,362 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.4643, noise scale: 0.016149
+2025-03-17 00:17:25,363 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:17:25,363 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:17:25,364 - medical_diagnosis - INFO - Average loss for round 3: 0.4983
+2025-03-17 00:17:25,364 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:17:25,364 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:17:25,364 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:17:25,399 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:17:25,403 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:17:25,404 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:17:25,450 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_3.pt
+2025-03-17 00:17:25,450 - zkml.federated - INFO - Update applied, completed round 3
+2025-03-17 00:17:25,451 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:17:25,451 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:17:25,609 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.2000085266828537, 'accuracy': 0.9039999842643738, 'precision': 0.6857142857140408, 'recall': 0.95999999999952, 'f1_score': 0.7999999999510556, 'true_positives': 192, 'false_positives': 88, 'false_negatives': 8, 'true_negatives': 712}
+2025-03-17 00:17:25,609 - medical_diagnosis - INFO - Round 3 metrics: {'loss': 0.2000085266828537, 'accuracy': 0.9039999842643738, 'precision': 0.6857142857140408, 'recall': 0.95999999999952, 'f1_score': 0.7999999999510556, 'true_positives': 192, 'false_positives': 88, 'false_negatives': 8, 'true_negatives': 712}
+2025-03-17 00:17:26,979 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:17:26,980 - medical_diagnosis - INFO - No improvement for 1 rounds
+2025-03-17 00:17:26,980 - medical_diagnosis - INFO - Round 3 completed in 11.88 seconds
+2025-03-17 00:17:26,980 - medical_diagnosis - INFO - Starting round 4/50
+2025-03-17 00:17:26,980 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:17:26,981 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:17:26,983 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:17:28,019 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.6257
+2025-03-17 00:17:29,131 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.3577
+2025-03-17 00:17:30,240 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3083
+2025-03-17 00:17:30,351 - zkml.federated - INFO - Local update computed in 3.37 seconds
+2025-03-17 00:17:30,351 - zkml.federated - INFO - Average loss: 0.4306, DP noise scale: 0.016149
+2025-03-17 00:17:30,352 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.4306, noise scale: 0.016149
+2025-03-17 00:17:30,353 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:17:30,353 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:17:30,353 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:17:30,354 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:17:30,357 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:17:31,449 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.5597
+2025-03-17 00:17:32,465 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4203
+2025-03-17 00:17:33,532 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4066
+2025-03-17 00:17:33,640 - zkml.federated - INFO - Local update computed in 3.29 seconds
+2025-03-17 00:17:33,640 - zkml.federated - INFO - Average loss: 0.4622, DP noise scale: 0.016149
+2025-03-17 00:17:33,641 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.4622, noise scale: 0.016149
+2025-03-17 00:17:33,641 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:17:33,642 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:17:33,642 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:17:33,643 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:17:33,645 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:17:34,808 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.5212
+2025-03-17 00:17:35,913 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.3172
+2025-03-17 00:17:36,997 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2863
+2025-03-17 00:17:37,097 - zkml.federated - INFO - Local update computed in 3.45 seconds
+2025-03-17 00:17:37,098 - zkml.federated - INFO - Average loss: 0.3749, DP noise scale: 0.016149
+2025-03-17 00:17:37,099 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.3749, noise scale: 0.016149
+2025-03-17 00:17:37,099 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:17:37,099 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:17:37,100 - medical_diagnosis - INFO - Average loss for round 4: 0.4226
+2025-03-17 00:17:37,100 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:17:37,100 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:17:37,101 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:17:37,129 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:17:37,130 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:17:37,130 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:17:37,174 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_4.pt
+2025-03-17 00:17:37,175 - zkml.federated - INFO - Update applied, completed round 4
+2025-03-17 00:17:37,175 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:17:37,175 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:17:37,305 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.14379620385169983, 'accuracy': 0.949999988079071, 'precision': 0.957317073170148, 'recall': 0.7849999999996076, 'f1_score': 0.8626373625873778, 'true_positives': 157, 'false_positives': 7, 'false_negatives': 43, 'true_negatives': 793}
+2025-03-17 00:17:37,306 - medical_diagnosis - INFO - Round 4 metrics: {'loss': 0.14379620385169983, 'accuracy': 0.949999988079071, 'precision': 0.957317073170148, 'recall': 0.7849999999996076, 'f1_score': 0.8626373625873778, 'true_positives': 157, 'false_positives': 7, 'false_negatives': 43, 'true_negatives': 793}
+2025-03-17 00:17:38,451 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:17:38,503 - medical_diagnosis - INFO - New best model saved (accuracy: 0.9500, F1: 0.8626)
+2025-03-17 00:17:38,503 - medical_diagnosis - INFO - Round 4 completed in 11.52 seconds
+2025-03-17 00:17:38,503 - medical_diagnosis - INFO - Starting round 5/50
+2025-03-17 00:17:38,504 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:17:38,504 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:17:38,507 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:17:39,682 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.4798
+2025-03-17 00:17:40,789 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.3157
+2025-03-17 00:17:41,865 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2788
+2025-03-17 00:17:41,963 - zkml.federated - INFO - Local update computed in 3.46 seconds
+2025-03-17 00:17:41,964 - zkml.federated - INFO - Average loss: 0.3581, DP noise scale: 0.016149
+2025-03-17 00:17:41,964 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.3581, noise scale: 0.016149
+2025-03-17 00:17:41,965 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:17:41,965 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:17:41,966 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:17:41,966 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:17:41,969 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:17:42,978 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.4347
+2025-03-17 00:17:43,997 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4026
+2025-03-17 00:17:45,032 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3281
+2025-03-17 00:17:45,132 - zkml.federated - INFO - Local update computed in 3.17 seconds
+2025-03-17 00:17:45,132 - zkml.federated - INFO - Average loss: 0.3885, DP noise scale: 0.016149
+2025-03-17 00:17:45,133 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.3885, noise scale: 0.016149
+2025-03-17 00:17:45,133 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:17:45,134 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:17:45,134 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:17:45,134 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:17:45,137 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:17:46,174 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.4930
+2025-03-17 00:17:47,365 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.3227
+2025-03-17 00:17:48,482 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2867
+2025-03-17 00:17:48,601 - zkml.federated - INFO - Local update computed in 3.47 seconds
+2025-03-17 00:17:48,601 - zkml.federated - INFO - Average loss: 0.3675, DP noise scale: 0.016149
+2025-03-17 00:17:48,602 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.3675, noise scale: 0.016149
+2025-03-17 00:17:48,603 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:17:48,603 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:17:48,603 - medical_diagnosis - INFO - Average loss for round 5: 0.3713
+2025-03-17 00:17:48,604 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:17:48,604 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:17:48,604 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:17:48,635 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:17:48,637 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:17:48,637 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:17:48,682 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_5.pt
+2025-03-17 00:17:48,682 - zkml.federated - INFO - Update applied, completed round 5
+2025-03-17 00:17:48,682 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:17:48,683 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:17:48,839 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.1494868949651718, 'accuracy': 0.9520000219345093, 'precision': 0.8518518518514575, 'recall': 0.9199999999995401, 'f1_score': 0.8846153845650334, 'true_positives': 184, 'false_positives': 32, 'false_negatives': 16, 'true_negatives': 768}
+2025-03-17 00:17:48,839 - medical_diagnosis - INFO - Round 5 metrics: {'loss': 0.1494868949651718, 'accuracy': 0.9520000219345093, 'precision': 0.8518518518514575, 'recall': 0.9199999999995401, 'f1_score': 0.8846153845650334, 'true_positives': 184, 'false_positives': 32, 'false_negatives': 16, 'true_negatives': 768}
+2025-03-17 00:17:50,068 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:17:50,103 - medical_diagnosis - INFO - New best model saved (accuracy: 0.9520, F1: 0.8846)
+2025-03-17 00:17:50,104 - medical_diagnosis - INFO - Round 5 completed in 11.60 seconds
+2025-03-17 00:17:50,104 - medical_diagnosis - INFO - Starting round 6/50
+2025-03-17 00:17:50,104 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:17:50,105 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:17:50,107 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:17:51,129 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.3200
+2025-03-17 00:17:52,207 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2785
+2025-03-17 00:17:53,771 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3015
+2025-03-17 00:17:53,893 - zkml.federated - INFO - Local update computed in 3.79 seconds
+2025-03-17 00:17:53,893 - zkml.federated - INFO - Average loss: 0.3000, DP noise scale: 0.016149
+2025-03-17 00:17:53,894 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.3000, noise scale: 0.016149
+2025-03-17 00:17:53,895 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:17:53,895 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:17:53,895 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:17:53,896 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:17:53,898 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:17:54,975 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.3302
+2025-03-17 00:17:55,997 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2965
+2025-03-17 00:17:57,039 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2766
+2025-03-17 00:17:57,140 - zkml.federated - INFO - Local update computed in 3.24 seconds
+2025-03-17 00:17:57,140 - zkml.federated - INFO - Average loss: 0.3011, DP noise scale: 0.016149
+2025-03-17 00:17:57,141 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.3011, noise scale: 0.016149
+2025-03-17 00:17:57,142 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:17:57,142 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:17:57,142 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:17:57,143 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:17:57,145 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:17:58,242 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.4614
+2025-03-17 00:17:59,351 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2983
+2025-03-17 00:18:00,443 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2707
+2025-03-17 00:18:00,588 - zkml.federated - INFO - Local update computed in 3.45 seconds
+2025-03-17 00:18:00,589 - zkml.federated - INFO - Average loss: 0.3434, DP noise scale: 0.016149
+2025-03-17 00:18:00,590 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.3434, noise scale: 0.016149
+2025-03-17 00:18:00,590 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:18:00,591 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:18:00,591 - medical_diagnosis - INFO - Average loss for round 6: 0.3148
+2025-03-17 00:18:00,591 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:18:00,592 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:18:00,592 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:18:00,616 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:18:00,627 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:18:00,627 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:18:00,692 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_6.pt
+2025-03-17 00:18:00,692 - zkml.federated - INFO - Update applied, completed round 6
+2025-03-17 00:18:00,692 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:18:00,693 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:18:00,830 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.13411529862880706, 'accuracy': 0.9520000219345093, 'precision': 0.87999999999956, 'recall': 0.87999999999956, 'f1_score': 0.87999999994956, 'true_positives': 176, 'false_positives': 24, 'false_negatives': 24, 'true_negatives': 776}
+2025-03-17 00:18:00,830 - medical_diagnosis - INFO - Round 6 metrics: {'loss': 0.13411529862880706, 'accuracy': 0.9520000219345093, 'precision': 0.87999999999956, 'recall': 0.87999999999956, 'f1_score': 0.87999999994956, 'true_positives': 176, 'false_positives': 24, 'false_negatives': 24, 'true_negatives': 776}
+2025-03-17 00:18:01,879 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:18:01,880 - medical_diagnosis - INFO - No improvement for 1 rounds
+2025-03-17 00:18:01,880 - medical_diagnosis - INFO - Round 6 completed in 11.78 seconds
+2025-03-17 00:18:01,880 - medical_diagnosis - INFO - Starting round 7/50
+2025-03-17 00:18:01,880 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:18:01,881 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:18:01,883 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:18:02,989 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.4833
+2025-03-17 00:18:04,093 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.3131
+2025-03-17 00:18:05,200 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2774
+2025-03-17 00:18:05,305 - zkml.federated - INFO - Local update computed in 3.42 seconds
+2025-03-17 00:18:05,305 - zkml.federated - INFO - Average loss: 0.3580, DP noise scale: 0.016149
+2025-03-17 00:18:05,306 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.3580, noise scale: 0.016149
+2025-03-17 00:18:05,307 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:18:05,307 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:18:05,307 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:18:05,308 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:18:05,311 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:18:06,335 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.4115
+2025-03-17 00:18:07,386 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2719
+2025-03-17 00:18:08,395 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2614
+2025-03-17 00:18:08,510 - zkml.federated - INFO - Local update computed in 3.20 seconds
+2025-03-17 00:18:08,511 - zkml.federated - INFO - Average loss: 0.3149, DP noise scale: 0.016149
+2025-03-17 00:18:08,512 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.3149, noise scale: 0.016149
+2025-03-17 00:18:08,512 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:18:08,513 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:18:08,513 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:18:08,514 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:18:08,517 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:18:09,628 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.4226
+2025-03-17 00:18:10,744 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2857
+2025-03-17 00:18:11,887 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2744
+2025-03-17 00:18:11,994 - zkml.federated - INFO - Local update computed in 3.48 seconds
+2025-03-17 00:18:11,994 - zkml.federated - INFO - Average loss: 0.3276, DP noise scale: 0.016149
+2025-03-17 00:18:11,995 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.3276, noise scale: 0.016149
+2025-03-17 00:18:11,996 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:18:11,996 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:18:11,996 - medical_diagnosis - INFO - Average loss for round 7: 0.3335
+2025-03-17 00:18:11,997 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:18:11,997 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:18:11,997 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:18:12,025 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:18:12,026 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:18:12,027 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:18:12,070 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_7.pt
+2025-03-17 00:18:12,071 - zkml.federated - INFO - Update applied, completed round 7
+2025-03-17 00:18:12,071 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:18:12,071 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:18:12,199 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.1325895618200302, 'accuracy': 0.949999988079071, 'precision': 0.8947368421047923, 'recall': 0.8499999999995751, 'f1_score': 0.8717948717444577, 'true_positives': 170, 'false_positives': 20, 'false_negatives': 30, 'true_negatives': 780}
+2025-03-17 00:18:12,199 - medical_diagnosis - INFO - Round 7 metrics: {'loss': 0.1325895618200302, 'accuracy': 0.949999988079071, 'precision': 0.8947368421047923, 'recall': 0.8499999999995751, 'f1_score': 0.8717948717444577, 'true_positives': 170, 'false_positives': 20, 'false_negatives': 30, 'true_negatives': 780}
+2025-03-17 00:18:13,253 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:18:13,253 - medical_diagnosis - INFO - No improvement for 2 rounds
+2025-03-17 00:18:13,253 - medical_diagnosis - INFO - Round 7 completed in 11.37 seconds
+2025-03-17 00:18:13,253 - medical_diagnosis - INFO - Starting round 8/50
+2025-03-17 00:18:13,254 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:18:13,254 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:18:13,257 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:18:14,403 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.4225
+2025-03-17 00:18:15,521 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2874
+2025-03-17 00:18:16,618 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2794
+2025-03-17 00:18:16,722 - zkml.federated - INFO - Local update computed in 3.47 seconds
+2025-03-17 00:18:16,723 - zkml.federated - INFO - Average loss: 0.3297, DP noise scale: 0.016149
+2025-03-17 00:18:16,723 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.3297, noise scale: 0.016149
+2025-03-17 00:18:16,724 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:18:16,725 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:18:16,725 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:18:16,725 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:18:16,729 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:18:17,740 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.3686
+2025-03-17 00:18:18,770 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2627
+2025-03-17 00:18:19,955 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2504
+2025-03-17 00:18:20,055 - zkml.federated - INFO - Local update computed in 3.33 seconds
+2025-03-17 00:18:20,055 - zkml.federated - INFO - Average loss: 0.2939, DP noise scale: 0.016149
+2025-03-17 00:18:20,056 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2939, noise scale: 0.016149
+2025-03-17 00:18:20,057 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:18:20,057 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:18:20,057 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:18:20,058 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:18:20,060 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:18:21,154 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.4664
+2025-03-17 00:18:22,230 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.3535
+2025-03-17 00:18:23,351 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3575
+2025-03-17 00:18:23,447 - zkml.federated - INFO - Local update computed in 3.39 seconds
+2025-03-17 00:18:23,448 - zkml.federated - INFO - Average loss: 0.3925, DP noise scale: 0.016149
+2025-03-17 00:18:23,449 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.3925, noise scale: 0.016149
+2025-03-17 00:18:23,449 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:18:23,449 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:18:23,450 - medical_diagnosis - INFO - Average loss for round 8: 0.3387
+2025-03-17 00:18:23,450 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:18:23,450 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:18:23,451 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:18:23,473 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:18:23,483 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:18:23,483 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:18:23,532 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_8.pt
+2025-03-17 00:18:23,533 - zkml.federated - INFO - Update applied, completed round 8
+2025-03-17 00:18:23,533 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:18:23,533 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:18:23,721 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.1274146716594696, 'accuracy': 0.9539999961853027, 'precision': 0.8969072164943831, 'recall': 0.869999999999565, 'f1_score': 0.8832487309140303, 'true_positives': 174, 'false_positives': 20, 'false_negatives': 26, 'true_negatives': 780}
+2025-03-17 00:18:23,722 - medical_diagnosis - INFO - Round 8 metrics: {'loss': 0.1274146716594696, 'accuracy': 0.9539999961853027, 'precision': 0.8969072164943831, 'recall': 0.869999999999565, 'f1_score': 0.8832487309140303, 'true_positives': 174, 'false_positives': 20, 'false_negatives': 26, 'true_negatives': 780}
+2025-03-17 00:18:24,916 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:18:24,956 - medical_diagnosis - INFO - New best model saved (accuracy: 0.9540, F1: 0.8846)
+2025-03-17 00:18:24,956 - medical_diagnosis - INFO - Round 8 completed in 11.70 seconds
+2025-03-17 00:18:24,956 - medical_diagnosis - INFO - Starting round 9/50
+2025-03-17 00:18:24,956 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:18:24,957 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:18:24,959 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:18:26,011 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.3843
+2025-03-17 00:18:27,095 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.3822
+2025-03-17 00:18:28,199 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3538
+2025-03-17 00:18:28,323 - zkml.federated - INFO - Local update computed in 3.37 seconds
+2025-03-17 00:18:28,323 - zkml.federated - INFO - Average loss: 0.3734, DP noise scale: 0.016149
+2025-03-17 00:18:28,324 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.3734, noise scale: 0.016149
+2025-03-17 00:18:28,325 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:18:28,325 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:18:28,325 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:18:28,326 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:18:28,328 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:18:29,383 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2943
+2025-03-17 00:18:30,486 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2516
+2025-03-17 00:18:31,495 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2430
+2025-03-17 00:18:31,592 - zkml.federated - INFO - Local update computed in 3.27 seconds
+2025-03-17 00:18:31,593 - zkml.federated - INFO - Average loss: 0.2630, DP noise scale: 0.016149
+2025-03-17 00:18:31,593 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2630, noise scale: 0.016149
+2025-03-17 00:18:31,594 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:18:31,595 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:18:31,595 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:18:31,595 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:18:31,598 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:18:32,658 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.3922
+2025-03-17 00:18:33,785 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2645
+2025-03-17 00:18:35,115 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2471
+2025-03-17 00:18:35,223 - zkml.federated - INFO - Local update computed in 3.63 seconds
+2025-03-17 00:18:35,223 - zkml.federated - INFO - Average loss: 0.3013, DP noise scale: 0.016149
+2025-03-17 00:18:35,224 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.3013, noise scale: 0.016149
+2025-03-17 00:18:35,225 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:18:35,225 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:18:35,225 - medical_diagnosis - INFO - Average loss for round 9: 0.3126
+2025-03-17 00:18:35,226 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:18:35,226 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:18:35,226 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:18:35,258 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:18:35,259 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:18:35,259 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:18:35,310 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_9.pt
+2025-03-17 00:18:35,311 - zkml.federated - INFO - Update applied, completed round 9
+2025-03-17 00:18:35,311 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:18:35,311 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:18:35,457 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.17250734746456145, 'accuracy': 0.9459999799728394, 'precision': 0.8318181818178038, 'recall': 0.9149999999995425, 'f1_score': 0.8714285713782698, 'true_positives': 183, 'false_positives': 37, 'false_negatives': 17, 'true_negatives': 763}
+2025-03-17 00:18:35,458 - medical_diagnosis - INFO - Round 9 metrics: {'loss': 0.17250734746456145, 'accuracy': 0.9459999799728394, 'precision': 0.8318181818178038, 'recall': 0.9149999999995425, 'f1_score': 0.8714285713782698, 'true_positives': 183, 'false_positives': 37, 'false_negatives': 17, 'true_negatives': 763}
+2025-03-17 00:18:38,157 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:18:38,158 - medical_diagnosis - INFO - No improvement for 1 rounds
+2025-03-17 00:18:38,158 - medical_diagnosis - INFO - Round 9 completed in 13.20 seconds
+2025-03-17 00:18:38,159 - medical_diagnosis - INFO - Starting round 10/50
+2025-03-17 00:18:38,159 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:18:38,160 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:18:38,163 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:18:40,593 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.4934
+2025-03-17 00:18:42,444 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.3239
+2025-03-17 00:18:44,261 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2715
+2025-03-17 00:18:44,396 - zkml.federated - INFO - Local update computed in 6.24 seconds
+2025-03-17 00:18:44,397 - zkml.federated - INFO - Average loss: 0.3629, DP noise scale: 0.016149
+2025-03-17 00:18:44,398 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.3629, noise scale: 0.016149
+2025-03-17 00:18:44,399 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:18:44,399 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:18:44,400 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:18:44,401 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:18:44,404 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:18:46,404 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.3429
+2025-03-17 00:18:48,318 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2710
+2025-03-17 00:18:50,288 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2461
+2025-03-17 00:18:50,453 - zkml.federated - INFO - Local update computed in 6.05 seconds
+2025-03-17 00:18:50,453 - zkml.federated - INFO - Average loss: 0.2867, DP noise scale: 0.016149
+2025-03-17 00:18:50,454 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2867, noise scale: 0.016149
+2025-03-17 00:18:50,455 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:18:50,455 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:18:50,456 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:18:50,456 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:18:50,460 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:18:52,427 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.3168
+2025-03-17 00:18:54,118 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2793
+2025-03-17 00:18:55,780 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2950
+2025-03-17 00:18:55,936 - zkml.federated - INFO - Local update computed in 5.48 seconds
+2025-03-17 00:18:55,936 - zkml.federated - INFO - Average loss: 0.2970, DP noise scale: 0.016149
+2025-03-17 00:18:55,937 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.2970, noise scale: 0.016149
+2025-03-17 00:18:55,938 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:18:55,938 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:18:55,939 - medical_diagnosis - INFO - Average loss for round 10: 0.3155
+2025-03-17 00:18:55,939 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:18:55,939 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:18:55,940 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:18:55,975 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:18:55,988 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:18:55,989 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:18:56,057 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_10.pt
+2025-03-17 00:18:56,058 - zkml.federated - INFO - Update applied, completed round 10
+2025-03-17 00:18:56,059 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:18:56,059 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:18:56,329 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.13781147742271424, 'accuracy': 0.9509999752044678, 'precision': 0.9037433155075382, 'recall': 0.8449999999995775, 'f1_score': 0.8733850128695018, 'true_positives': 169, 'false_positives': 18, 'false_negatives': 31, 'true_negatives': 782}
+2025-03-17 00:18:56,330 - medical_diagnosis - INFO - Round 10 metrics: {'loss': 0.13781147742271424, 'accuracy': 0.9509999752044678, 'precision': 0.9037433155075382, 'recall': 0.8449999999995775, 'f1_score': 0.8733850128695018, 'true_positives': 169, 'false_positives': 18, 'false_negatives': 31, 'true_negatives': 782}
+2025-03-17 00:18:58,690 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:18:58,691 - medical_diagnosis - INFO - No improvement for 2 rounds
+2025-03-17 00:18:58,691 - medical_diagnosis - INFO - Round 10 completed in 20.53 seconds
+2025-03-17 00:18:58,691 - medical_diagnosis - INFO - Starting round 11/50
+2025-03-17 00:18:58,692 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:18:58,693 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:18:58,697 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:19:00,540 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.3648
+2025-03-17 00:19:02,407 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.3131
+2025-03-17 00:19:04,346 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2784
+2025-03-17 00:19:04,511 - zkml.federated - INFO - Local update computed in 5.82 seconds
+2025-03-17 00:19:04,512 - zkml.federated - INFO - Average loss: 0.3188, DP noise scale: 0.016149
+2025-03-17 00:19:04,513 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.3188, noise scale: 0.016149
+2025-03-17 00:19:04,514 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:19:04,514 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:19:04,514 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:19:04,515 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:19:04,518 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:19:06,423 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2768
+2025-03-17 00:19:08,316 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2619
+2025-03-17 00:19:10,198 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2367
+2025-03-17 00:19:10,359 - zkml.federated - INFO - Local update computed in 5.84 seconds
+2025-03-17 00:19:10,360 - zkml.federated - INFO - Average loss: 0.2585, DP noise scale: 0.016149
+2025-03-17 00:19:10,361 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2585, noise scale: 0.016149
+2025-03-17 00:19:10,362 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:19:10,363 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:19:10,364 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:19:10,365 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:19:10,369 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:19:12,334 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.3762
+2025-03-17 00:19:14,083 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2803
+2025-03-17 00:19:16,003 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2720
+2025-03-17 00:19:16,187 - zkml.federated - INFO - Local update computed in 5.82 seconds
+2025-03-17 00:19:16,188 - zkml.federated - INFO - Average loss: 0.3095, DP noise scale: 0.016149
+2025-03-17 00:19:16,189 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.3095, noise scale: 0.016149
+2025-03-17 00:19:16,190 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:19:16,191 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:19:16,191 - medical_diagnosis - INFO - Average loss for round 11: 0.2956
+2025-03-17 00:19:16,192 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:19:16,192 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:19:16,192 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:19:16,229 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:19:16,248 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:19:16,248 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:19:16,332 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_11.pt
+2025-03-17 00:19:16,333 - zkml.federated - INFO - Update applied, completed round 11
+2025-03-17 00:19:16,333 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:19:16,334 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:19:16,630 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.1373682507276535, 'accuracy': 0.9430000185966492, 'precision': 0.9386503067478905, 'recall': 0.7649999999996175, 'f1_score': 0.8429752065616254, 'true_positives': 153, 'false_positives': 10, 'false_negatives': 47, 'true_negatives': 790}
+2025-03-17 00:19:16,631 - medical_diagnosis - INFO - Round 11 metrics: {'loss': 0.1373682507276535, 'accuracy': 0.9430000185966492, 'precision': 0.9386503067478905, 'recall': 0.7649999999996175, 'f1_score': 0.8429752065616254, 'true_positives': 153, 'false_positives': 10, 'false_negatives': 47, 'true_negatives': 790}
+2025-03-17 00:19:19,414 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:19:19,415 - medical_diagnosis - INFO - No improvement for 3 rounds
+2025-03-17 00:19:19,416 - medical_diagnosis - INFO - Round 11 completed in 20.72 seconds
+2025-03-17 00:19:19,416 - medical_diagnosis - INFO - Starting round 12/50
+2025-03-17 00:19:19,417 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:19:19,418 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:19:19,422 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:19:21,408 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.3026
+2025-03-17 00:19:23,314 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2524
+2025-03-17 00:19:25,199 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2532
+2025-03-17 00:19:25,360 - zkml.federated - INFO - Local update computed in 5.94 seconds
+2025-03-17 00:19:25,361 - zkml.federated - INFO - Average loss: 0.2694, DP noise scale: 0.016149
+2025-03-17 00:19:25,362 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.2694, noise scale: 0.016149
+2025-03-17 00:19:25,362 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:19:25,363 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:19:25,363 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:19:25,364 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:19:25,367 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:19:27,196 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2764
+2025-03-17 00:19:29,064 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2658
+2025-03-17 00:19:30,875 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2461
+2025-03-17 00:19:31,026 - zkml.federated - INFO - Local update computed in 5.66 seconds
+2025-03-17 00:19:31,027 - zkml.federated - INFO - Average loss: 0.2628, DP noise scale: 0.016149
+2025-03-17 00:19:31,028 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2628, noise scale: 0.016149
+2025-03-17 00:19:31,029 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:19:31,030 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:19:31,030 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:19:31,031 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:19:31,034 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:19:32,941 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.3134
+2025-03-17 00:19:34,881 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2966
+2025-03-17 00:19:36,799 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2435
+2025-03-17 00:19:36,953 - zkml.federated - INFO - Local update computed in 5.92 seconds
+2025-03-17 00:19:36,954 - zkml.federated - INFO - Average loss: 0.2845, DP noise scale: 0.016149
+2025-03-17 00:19:36,955 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.2845, noise scale: 0.016149
+2025-03-17 00:19:36,956 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:19:36,956 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:19:36,956 - medical_diagnosis - INFO - Average loss for round 12: 0.2722
+2025-03-17 00:19:36,957 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:19:36,957 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:19:36,957 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:19:36,991 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:19:36,993 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:19:36,993 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:19:37,066 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_12.pt
+2025-03-17 00:19:37,066 - zkml.federated - INFO - Update applied, completed round 12
+2025-03-17 00:19:37,067 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:19:37,067 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:19:37,346 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.1900750563144684, 'accuracy': 0.9520000219345093, 'precision': 0.8551401869154883, 'recall': 0.9149999999995425, 'f1_score': 0.8840579709641229, 'true_positives': 183, 'false_positives': 31, 'false_negatives': 17, 'true_negatives': 769}
+2025-03-17 00:19:37,347 - medical_diagnosis - INFO - Round 12 metrics: {'loss': 0.1900750563144684, 'accuracy': 0.9520000219345093, 'precision': 0.8551401869154883, 'recall': 0.9149999999995425, 'f1_score': 0.8840579709641229, 'true_positives': 183, 'false_positives': 31, 'false_negatives': 17, 'true_negatives': 769}
+2025-03-17 00:19:40,281 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:19:40,282 - medical_diagnosis - INFO - No improvement for 4 rounds
+2025-03-17 00:19:40,282 - medical_diagnosis - INFO - Round 12 completed in 20.87 seconds
+2025-03-17 00:19:40,282 - medical_diagnosis - INFO - Starting round 13/50
+2025-03-17 00:19:40,283 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:19:40,284 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:19:40,288 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:19:42,292 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.3329
+2025-03-17 00:19:44,205 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2698
+2025-03-17 00:19:46,133 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2509
+2025-03-17 00:19:46,274 - zkml.federated - INFO - Local update computed in 5.99 seconds
+2025-03-17 00:19:46,274 - zkml.federated - INFO - Average loss: 0.2845, DP noise scale: 0.016149
+2025-03-17 00:19:46,275 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.2845, noise scale: 0.016149
+2025-03-17 00:19:46,276 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:19:46,277 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:19:46,277 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:19:46,278 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:19:46,283 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:19:48,231 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2955
+2025-03-17 00:19:49,986 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2727
+2025-03-17 00:19:51,709 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2416
+2025-03-17 00:19:51,886 - zkml.federated - INFO - Local update computed in 5.61 seconds
+2025-03-17 00:19:51,887 - zkml.federated - INFO - Average loss: 0.2699, DP noise scale: 0.016149
+2025-03-17 00:19:51,888 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2699, noise scale: 0.016149
+2025-03-17 00:19:51,888 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:19:51,889 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:19:51,889 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:19:51,890 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:19:51,894 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:19:53,623 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.3138
+2025-03-17 00:19:55,526 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2453
+2025-03-17 00:19:57,432 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2350
+2025-03-17 00:19:57,635 - zkml.federated - INFO - Local update computed in 5.74 seconds
+2025-03-17 00:19:57,636 - zkml.federated - INFO - Average loss: 0.2647, DP noise scale: 0.016149
+2025-03-17 00:19:57,637 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.2647, noise scale: 0.016149
+2025-03-17 00:19:57,638 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:19:57,638 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:19:57,639 - medical_diagnosis - INFO - Average loss for round 13: 0.2731
+2025-03-17 00:19:57,639 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:19:57,639 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:19:57,640 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:19:57,687 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:19:57,688 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:19:57,689 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:19:57,774 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_13.pt
+2025-03-17 00:19:57,775 - zkml.federated - INFO - Update applied, completed round 13
+2025-03-17 00:19:57,775 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:19:57,776 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:19:58,064 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.1737039535045624, 'accuracy': 0.9509999752044678, 'precision': 0.8756218905468282, 'recall': 0.87999999999956, 'f1_score': 0.8778054862338518, 'true_positives': 176, 'false_positives': 25, 'false_negatives': 24, 'true_negatives': 775}
+2025-03-17 00:19:58,065 - medical_diagnosis - INFO - Round 13 metrics: {'loss': 0.1737039535045624, 'accuracy': 0.9509999752044678, 'precision': 0.8756218905468282, 'recall': 0.87999999999956, 'f1_score': 0.8778054862338518, 'true_positives': 176, 'false_positives': 25, 'false_negatives': 24, 'true_negatives': 775}
+2025-03-17 00:20:00,603 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:20:00,604 - medical_diagnosis - INFO - No improvement for 5 rounds
+2025-03-17 00:20:00,604 - medical_diagnosis - INFO - Round 13 completed in 20.32 seconds
+2025-03-17 00:20:00,605 - medical_diagnosis - INFO - Starting round 14/50
+2025-03-17 00:20:00,605 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:20:00,606 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:20:00,611 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:20:02,354 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.3094
+2025-03-17 00:20:03,996 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2340
+2025-03-17 00:20:05,655 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2350
+2025-03-17 00:20:05,804 - zkml.federated - INFO - Local update computed in 5.20 seconds
+2025-03-17 00:20:05,805 - zkml.federated - INFO - Average loss: 0.2595, DP noise scale: 0.016149
+2025-03-17 00:20:05,806 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.2595, noise scale: 0.016149
+2025-03-17 00:20:05,807 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:20:05,808 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:20:05,808 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:20:05,809 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:20:05,813 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:20:07,620 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2897
+2025-03-17 00:20:09,481 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2482
+2025-03-17 00:20:11,387 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2385
+2025-03-17 00:20:11,566 - zkml.federated - INFO - Local update computed in 5.76 seconds
+2025-03-17 00:20:11,567 - zkml.federated - INFO - Average loss: 0.2588, DP noise scale: 0.016149
+2025-03-17 00:20:11,569 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2588, noise scale: 0.016149
+2025-03-17 00:20:11,570 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:20:11,570 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:20:11,571 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:20:11,571 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:20:11,576 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:20:13,492 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2913
+2025-03-17 00:20:15,396 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2511
+2025-03-17 00:20:17,303 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2324
+2025-03-17 00:20:17,489 - zkml.federated - INFO - Local update computed in 5.92 seconds
+2025-03-17 00:20:17,490 - zkml.federated - INFO - Average loss: 0.2583, DP noise scale: 0.016149
+2025-03-17 00:20:17,491 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.2583, noise scale: 0.016149
+2025-03-17 00:20:17,491 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:20:17,492 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:20:17,492 - medical_diagnosis - INFO - Average loss for round 14: 0.2589
+2025-03-17 00:20:17,493 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:20:17,493 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:20:17,493 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:20:17,532 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:20:17,563 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:20:17,564 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:20:17,641 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_14.pt
+2025-03-17 00:20:17,641 - zkml.federated - INFO - Update applied, completed round 14
+2025-03-17 00:20:17,642 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:20:17,642 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:20:17,883 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.14772907924652098, 'accuracy': 0.9509999752044678, 'precision': 0.8612440191383439, 'recall': 0.89999999999955, 'f1_score': 0.8801955989715987, 'true_positives': 180, 'false_positives': 29, 'false_negatives': 20, 'true_negatives': 771}
+2025-03-17 00:20:17,884 - medical_diagnosis - INFO - Round 14 metrics: {'loss': 0.14772907924652098, 'accuracy': 0.9509999752044678, 'precision': 0.8612440191383439, 'recall': 0.89999999999955, 'f1_score': 0.8801955989715987, 'true_positives': 180, 'false_positives': 29, 'false_negatives': 20, 'true_negatives': 771}
+2025-03-17 00:20:20,563 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:20:20,564 - medical_diagnosis - INFO - No improvement for 6 rounds
+2025-03-17 00:20:20,564 - medical_diagnosis - INFO - Round 14 completed in 19.96 seconds
+2025-03-17 00:20:20,565 - medical_diagnosis - INFO - Starting round 15/50
+2025-03-17 00:20:20,565 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:20:20,566 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:20:20,569 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:20:22,384 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.3288
+2025-03-17 00:20:24,088 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.3109
+2025-03-17 00:20:25,929 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2854
+2025-03-17 00:20:26,088 - zkml.federated - INFO - Local update computed in 5.52 seconds
+2025-03-17 00:20:26,089 - zkml.federated - INFO - Average loss: 0.3084, DP noise scale: 0.016149
+2025-03-17 00:20:26,090 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.3084, noise scale: 0.016149
+2025-03-17 00:20:26,091 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:20:26,091 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:20:26,091 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:20:26,092 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:20:26,096 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:20:27,950 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.3012
+2025-03-17 00:20:30,455 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2596
+2025-03-17 00:20:32,304 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2344
+2025-03-17 00:20:32,461 - zkml.federated - INFO - Local update computed in 6.37 seconds
+2025-03-17 00:20:32,461 - zkml.federated - INFO - Average loss: 0.2651, DP noise scale: 0.016149
+2025-03-17 00:20:32,462 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2651, noise scale: 0.016149
+2025-03-17 00:20:32,463 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:20:32,463 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:20:32,464 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:20:32,464 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:20:32,468 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:20:34,198 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2975
+2025-03-17 00:20:35,851 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2538
+2025-03-17 00:20:37,693 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2346
+2025-03-17 00:20:37,872 - zkml.federated - INFO - Local update computed in 5.41 seconds
+2025-03-17 00:20:37,873 - zkml.federated - INFO - Average loss: 0.2619, DP noise scale: 0.016149
+2025-03-17 00:20:37,874 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.2619, noise scale: 0.016149
+2025-03-17 00:20:37,876 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:20:37,877 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:20:37,878 - medical_diagnosis - INFO - Average loss for round 15: 0.2785
+2025-03-17 00:20:37,878 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:20:37,879 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:20:37,879 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:20:37,923 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:20:37,925 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:20:37,926 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:20:38,000 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_15.pt
+2025-03-17 00:20:38,001 - zkml.federated - INFO - Update applied, completed round 15
+2025-03-17 00:20:38,001 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:20:38,002 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:20:38,288 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.15649606812000275, 'accuracy': 0.9509999752044678, 'precision': 0.8682926829264057, 'recall': 0.889999999999555, 'f1_score': 0.8790123456285859, 'true_positives': 178, 'false_positives': 27, 'false_negatives': 22, 'true_negatives': 773}
+2025-03-17 00:20:38,289 - medical_diagnosis - INFO - Round 15 metrics: {'loss': 0.15649606812000275, 'accuracy': 0.9509999752044678, 'precision': 0.8682926829264057, 'recall': 0.889999999999555, 'f1_score': 0.8790123456285859, 'true_positives': 178, 'false_positives': 27, 'false_negatives': 22, 'true_negatives': 773}
+2025-03-17 00:20:41,031 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:20:41,032 - medical_diagnosis - INFO - No improvement for 7 rounds
+2025-03-17 00:20:41,032 - medical_diagnosis - INFO - Round 15 completed in 20.47 seconds
+2025-03-17 00:20:41,033 - medical_diagnosis - INFO - Starting round 16/50
+2025-03-17 00:20:41,033 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:20:41,035 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:20:41,040 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:20:42,923 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.3642
+2025-03-17 00:20:44,632 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2875
+2025-03-17 00:20:46,510 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2518
+2025-03-17 00:20:46,678 - zkml.federated - INFO - Local update computed in 5.64 seconds
+2025-03-17 00:20:46,679 - zkml.federated - INFO - Average loss: 0.3012, DP noise scale: 0.016149
+2025-03-17 00:20:46,680 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.3012, noise scale: 0.016149
+2025-03-17 00:20:46,681 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:20:46,682 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:20:46,682 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:20:46,683 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:20:46,687 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:20:48,622 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2693
+2025-03-17 00:20:50,547 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2400
+2025-03-17 00:20:52,672 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2296
+2025-03-17 00:20:53,092 - zkml.federated - INFO - Local update computed in 6.41 seconds
+2025-03-17 00:20:53,097 - zkml.federated - INFO - Average loss: 0.2463, DP noise scale: 0.016149
+2025-03-17 00:20:53,099 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2463, noise scale: 0.016149
+2025-03-17 00:20:53,106 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:20:53,107 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:20:53,107 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:20:53,111 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:20:53,118 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:20:55,161 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2561
+2025-03-17 00:20:57,067 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2438
+2025-03-17 00:20:58,972 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2432
+2025-03-17 00:20:59,155 - zkml.federated - INFO - Local update computed in 6.04 seconds
+2025-03-17 00:20:59,156 - zkml.federated - INFO - Average loss: 0.2477, DP noise scale: 0.016149
+2025-03-17 00:20:59,157 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.2477, noise scale: 0.016149
+2025-03-17 00:20:59,157 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:20:59,158 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:20:59,158 - medical_diagnosis - INFO - Average loss for round 16: 0.2651
+2025-03-17 00:20:59,159 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:20:59,159 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:20:59,159 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:20:59,206 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:20:59,208 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:20:59,209 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:20:59,292 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_16.pt
+2025-03-17 00:20:59,293 - zkml.federated - INFO - Update applied, completed round 16
+2025-03-17 00:20:59,293 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:20:59,294 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:20:59,582 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.1483184163570404, 'accuracy': 0.9480000138282776, 'precision': 0.9157303370781373, 'recall': 0.8149999999995926, 'f1_score': 0.8624338623835754, 'true_positives': 163, 'false_positives': 15, 'false_negatives': 37, 'true_negatives': 785}
+2025-03-17 00:20:59,583 - medical_diagnosis - INFO - Round 16 metrics: {'loss': 0.1483184163570404, 'accuracy': 0.9480000138282776, 'precision': 0.9157303370781373, 'recall': 0.8149999999995926, 'f1_score': 0.8624338623835754, 'true_positives': 163, 'false_positives': 15, 'false_negatives': 37, 'true_negatives': 785}
+2025-03-17 00:21:02,912 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:21:02,913 - medical_diagnosis - INFO - No improvement for 8 rounds
+2025-03-17 00:21:02,914 - medical_diagnosis - INFO - Round 16 completed in 21.88 seconds
+2025-03-17 00:21:02,914 - medical_diagnosis - INFO - Starting round 17/50
+2025-03-17 00:21:02,915 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:21:02,916 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:21:02,921 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:21:04,929 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2908
+2025-03-17 00:21:06,851 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2339
+2025-03-17 00:21:08,741 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2492
+2025-03-17 00:21:08,879 - zkml.federated - INFO - Local update computed in 5.96 seconds
+2025-03-17 00:21:08,880 - zkml.federated - INFO - Average loss: 0.2580, DP noise scale: 0.016149
+2025-03-17 00:21:08,881 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.2580, noise scale: 0.016149
+2025-03-17 00:21:08,882 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:21:08,883 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:21:08,883 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:21:08,884 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:21:08,888 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:21:10,631 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2425
+2025-03-17 00:21:12,418 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2334
+2025-03-17 00:21:14,332 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2234
+2025-03-17 00:21:14,512 - zkml.federated - INFO - Local update computed in 5.63 seconds
+2025-03-17 00:21:14,513 - zkml.federated - INFO - Average loss: 0.2331, DP noise scale: 0.016149
+2025-03-17 00:21:14,514 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2331, noise scale: 0.016149
+2025-03-17 00:21:14,514 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:21:14,515 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:21:14,515 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:21:14,516 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:21:14,520 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:21:16,450 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2759
+2025-03-17 00:21:18,343 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2319
+2025-03-17 00:21:20,083 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2296
+2025-03-17 00:21:20,259 - zkml.federated - INFO - Local update computed in 5.74 seconds
+2025-03-17 00:21:20,260 - zkml.federated - INFO - Average loss: 0.2458, DP noise scale: 0.016149
+2025-03-17 00:21:20,261 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.2458, noise scale: 0.016149
+2025-03-17 00:21:20,262 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:21:20,262 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:21:20,263 - medical_diagnosis - INFO - Average loss for round 17: 0.2456
+2025-03-17 00:21:20,263 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:21:20,263 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:21:20,264 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:21:20,298 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:21:20,344 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:21:20,345 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:21:20,427 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_17.pt
+2025-03-17 00:21:20,427 - zkml.federated - INFO - Update applied, completed round 17
+2025-03-17 00:21:20,428 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:21:20,428 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:21:20,677 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.1783964422941208, 'accuracy': 0.9509999752044678, 'precision': 0.8544600938963125, 'recall': 0.9099999999995451, 'f1_score': 0.8813559321530127, 'true_positives': 182, 'false_positives': 31, 'false_negatives': 18, 'true_negatives': 769}
+2025-03-17 00:21:20,679 - medical_diagnosis - INFO - Round 17 metrics: {'loss': 0.1783964422941208, 'accuracy': 0.9509999752044678, 'precision': 0.8544600938963125, 'recall': 0.9099999999995451, 'f1_score': 0.8813559321530127, 'true_positives': 182, 'false_positives': 31, 'false_negatives': 18, 'true_negatives': 769}
+2025-03-17 00:21:23,455 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:21:23,455 - medical_diagnosis - INFO - No improvement for 9 rounds
+2025-03-17 00:21:23,456 - medical_diagnosis - INFO - Round 17 completed in 20.54 seconds
+2025-03-17 00:21:23,456 - medical_diagnosis - INFO - Starting round 18/50
+2025-03-17 00:21:23,457 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:21:23,462 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:21:23,466 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:21:25,407 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2658
+2025-03-17 00:21:27,282 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2431
+2025-03-17 00:21:29,213 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2313
+2025-03-17 00:21:29,360 - zkml.federated - INFO - Local update computed in 5.90 seconds
+2025-03-17 00:21:29,360 - zkml.federated - INFO - Average loss: 0.2467, DP noise scale: 0.016149
+2025-03-17 00:21:29,361 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.2467, noise scale: 0.016149
+2025-03-17 00:21:29,362 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:21:29,362 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:21:29,363 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:21:29,363 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:21:29,367 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:21:31,287 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2678
+2025-03-17 00:21:33,185 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2354
+2025-03-17 00:21:34,953 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2384
+2025-03-17 00:21:35,111 - zkml.federated - INFO - Local update computed in 5.75 seconds
+2025-03-17 00:21:35,111 - zkml.federated - INFO - Average loss: 0.2472, DP noise scale: 0.016149
+2025-03-17 00:21:35,112 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2472, noise scale: 0.016149
+2025-03-17 00:21:35,113 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:21:35,113 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:21:35,114 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:21:35,114 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:21:35,118 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:21:37,019 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2518
+2025-03-17 00:21:38,912 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2273
+2025-03-17 00:21:40,799 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2252
+2025-03-17 00:21:40,952 - zkml.federated - INFO - Local update computed in 5.84 seconds
+2025-03-17 00:21:40,953 - zkml.federated - INFO - Average loss: 0.2348, DP noise scale: 0.016149
+2025-03-17 00:21:40,954 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.2348, noise scale: 0.016149
+2025-03-17 00:21:40,954 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:21:40,955 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:21:40,955 - medical_diagnosis - INFO - Average loss for round 18: 0.2429
+2025-03-17 00:21:40,955 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:21:40,956 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:21:40,956 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:21:40,996 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:21:40,998 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:21:40,999 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:21:41,063 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_18.pt
+2025-03-17 00:21:41,064 - zkml.federated - INFO - Update applied, completed round 18
+2025-03-17 00:21:41,064 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:21:41,064 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:21:41,344 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.14106189560890198, 'accuracy': 0.9570000171661377, 'precision': 0.8944723618085958, 'recall': 0.889999999999555, 'f1_score': 0.8922305763906558, 'true_positives': 178, 'false_positives': 21, 'false_negatives': 22, 'true_negatives': 779}
+2025-03-17 00:21:41,345 - medical_diagnosis - INFO - Round 18 metrics: {'loss': 0.14106189560890198, 'accuracy': 0.9570000171661377, 'precision': 0.8944723618085958, 'recall': 0.889999999999555, 'f1_score': 0.8922305763906558, 'true_positives': 178, 'false_positives': 21, 'false_negatives': 22, 'true_negatives': 779}
+2025-03-17 00:21:43,967 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:21:44,047 - medical_diagnosis - INFO - New best model saved (accuracy: 0.9570, F1: 0.8922)
+2025-03-17 00:21:44,048 - medical_diagnosis - INFO - Round 18 completed in 20.59 seconds
+2025-03-17 00:21:44,048 - medical_diagnosis - INFO - Starting round 19/50
+2025-03-17 00:21:44,049 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:21:44,050 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:21:44,055 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:21:45,964 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2617
+2025-03-17 00:21:47,875 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2685
+2025-03-17 00:21:49,776 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2508
+2025-03-17 00:21:49,945 - zkml.federated - INFO - Local update computed in 5.89 seconds
+2025-03-17 00:21:49,946 - zkml.federated - INFO - Average loss: 0.2603, DP noise scale: 0.016149
+2025-03-17 00:21:49,947 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.2603, noise scale: 0.016149
+2025-03-17 00:21:49,950 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:21:49,951 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:21:49,951 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:21:49,952 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:21:49,956 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:21:51,657 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2584
+2025-03-17 00:21:53,411 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2647
+2025-03-17 00:21:55,303 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2234
+2025-03-17 00:21:55,451 - zkml.federated - INFO - Local update computed in 5.50 seconds
+2025-03-17 00:21:55,452 - zkml.federated - INFO - Average loss: 0.2489, DP noise scale: 0.016149
+2025-03-17 00:21:55,453 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2489, noise scale: 0.016149
+2025-03-17 00:21:55,454 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:21:55,454 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:21:55,455 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:21:55,455 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:21:55,459 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:21:57,333 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2622
+2025-03-17 00:21:59,208 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2550
+2025-03-17 00:22:01,131 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2276
+2025-03-17 00:22:01,274 - zkml.federated - INFO - Local update computed in 5.82 seconds
+2025-03-17 00:22:01,275 - zkml.federated - INFO - Average loss: 0.2482, DP noise scale: 0.016149
+2025-03-17 00:22:01,276 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.2482, noise scale: 0.016149
+2025-03-17 00:22:01,277 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:22:01,277 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:22:01,278 - medical_diagnosis - INFO - Average loss for round 19: 0.2525
+2025-03-17 00:22:01,278 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:22:01,279 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:22:01,279 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:22:01,316 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:22:01,324 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:22:01,325 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:22:01,389 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_19.pt
+2025-03-17 00:22:01,390 - zkml.federated - INFO - Update applied, completed round 19
+2025-03-17 00:22:01,390 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:22:01,391 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:22:01,673 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.14136174654960632, 'accuracy': 0.9490000009536743, 'precision': 0.8900523560204765, 'recall': 0.8499999999995751, 'f1_score': 0.8695652173408862, 'true_positives': 170, 'false_positives': 21, 'false_negatives': 30, 'true_negatives': 779}
+2025-03-17 00:22:01,674 - medical_diagnosis - INFO - Round 19 metrics: {'loss': 0.14136174654960632, 'accuracy': 0.9490000009536743, 'precision': 0.8900523560204765, 'recall': 0.8499999999995751, 'f1_score': 0.8695652173408862, 'true_positives': 170, 'false_positives': 21, 'false_negatives': 30, 'true_negatives': 779}
+2025-03-17 00:22:04,280 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:22:04,281 - medical_diagnosis - INFO - No improvement for 1 rounds
+2025-03-17 00:22:04,281 - medical_diagnosis - INFO - Round 19 completed in 20.23 seconds
+2025-03-17 00:22:04,281 - medical_diagnosis - INFO - Starting round 20/50
+2025-03-17 00:22:04,282 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:22:04,283 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:22:04,286 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:22:05,989 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2870
+2025-03-17 00:22:07,622 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2290
+2025-03-17 00:22:09,311 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2282
+2025-03-17 00:22:09,445 - zkml.federated - INFO - Local update computed in 5.16 seconds
+2025-03-17 00:22:09,446 - zkml.federated - INFO - Average loss: 0.2481, DP noise scale: 0.016149
+2025-03-17 00:22:09,447 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.2481, noise scale: 0.016149
+2025-03-17 00:22:09,448 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:22:09,448 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:22:09,448 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:22:09,449 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:22:09,453 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:22:11,175 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2811
+2025-03-17 00:22:12,880 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2197
+2025-03-17 00:22:14,738 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2241
+2025-03-17 00:22:14,904 - zkml.federated - INFO - Local update computed in 5.45 seconds
+2025-03-17 00:22:14,905 - zkml.federated - INFO - Average loss: 0.2416, DP noise scale: 0.016149
+2025-03-17 00:22:14,906 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2416, noise scale: 0.016149
+2025-03-17 00:22:14,907 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:22:14,907 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:22:14,907 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:22:14,908 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:22:14,911 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:22:16,778 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2316
+2025-03-17 00:22:18,524 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2351
+2025-03-17 00:22:20,436 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2188
+2025-03-17 00:22:20,608 - zkml.federated - INFO - Local update computed in 5.70 seconds
+2025-03-17 00:22:20,608 - zkml.federated - INFO - Average loss: 0.2285, DP noise scale: 0.016149
+2025-03-17 00:22:20,609 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.2285, noise scale: 0.016149
+2025-03-17 00:22:20,610 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:22:20,610 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:22:20,611 - medical_diagnosis - INFO - Average loss for round 20: 0.2394
+2025-03-17 00:22:20,611 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:22:20,612 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:22:20,612 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:22:20,660 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:22:20,662 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:22:20,664 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:22:20,753 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_20.pt
+2025-03-17 00:22:20,754 - zkml.federated - INFO - Update applied, completed round 20
+2025-03-17 00:22:20,754 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:22:20,755 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:22:21,025 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.1734463860988617, 'accuracy': 0.953000009059906, 'precision': 0.8731707317068912, 'recall': 0.8949999999995526, 'f1_score': 0.8839506172335218, 'true_positives': 179, 'false_positives': 26, 'false_negatives': 21, 'true_negatives': 774}
+2025-03-17 00:22:21,026 - medical_diagnosis - INFO - Round 20 metrics: {'loss': 0.1734463860988617, 'accuracy': 0.953000009059906, 'precision': 0.8731707317068912, 'recall': 0.8949999999995526, 'f1_score': 0.8839506172335218, 'true_positives': 179, 'false_positives': 26, 'false_negatives': 21, 'true_negatives': 774}
+2025-03-17 00:22:23,724 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:22:23,725 - medical_diagnosis - INFO - No improvement for 2 rounds
+2025-03-17 00:22:23,725 - medical_diagnosis - INFO - Round 20 completed in 19.44 seconds
+2025-03-17 00:22:23,725 - medical_diagnosis - INFO - Starting round 21/50
+2025-03-17 00:22:23,726 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:22:23,727 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:22:23,730 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:22:25,562 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.3099
+2025-03-17 00:22:27,464 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2383
+2025-03-17 00:22:29,375 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2195
+2025-03-17 00:22:29,545 - zkml.federated - INFO - Local update computed in 5.82 seconds
+2025-03-17 00:22:29,546 - zkml.federated - INFO - Average loss: 0.2559, DP noise scale: 0.016149
+2025-03-17 00:22:29,547 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.2559, noise scale: 0.016149
+2025-03-17 00:22:29,548 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:22:29,549 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:22:29,549 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:22:29,550 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:22:29,554 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:22:31,273 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2371
+2025-03-17 00:22:33,023 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2264
+2025-03-17 00:22:34,800 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2153
+2025-03-17 00:22:34,942 - zkml.federated - INFO - Local update computed in 5.39 seconds
+2025-03-17 00:22:34,942 - zkml.federated - INFO - Average loss: 0.2263, DP noise scale: 0.016149
+2025-03-17 00:22:34,943 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2263, noise scale: 0.016149
+2025-03-17 00:22:34,944 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:22:34,945 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:22:34,945 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:22:34,946 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:22:34,950 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:22:36,888 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2703
+2025-03-17 00:22:38,765 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2385
+2025-03-17 00:22:40,668 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2201
+2025-03-17 00:22:40,801 - zkml.federated - INFO - Local update computed in 5.85 seconds
+2025-03-17 00:22:40,801 - zkml.federated - INFO - Average loss: 0.2429, DP noise scale: 0.016149
+2025-03-17 00:22:40,803 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.2429, noise scale: 0.016149
+2025-03-17 00:22:40,804 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:22:40,804 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:22:40,805 - medical_diagnosis - INFO - Average loss for round 21: 0.2417
+2025-03-17 00:22:40,805 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:22:40,805 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:22:40,806 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:22:40,849 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:22:40,851 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:22:40,851 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:22:40,938 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_21.pt
+2025-03-17 00:22:40,938 - zkml.federated - INFO - Update applied, completed round 21
+2025-03-17 00:22:40,939 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:22:40,939 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:22:41,228 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.1461193163394928, 'accuracy': 0.9470000267028809, 'precision': 0.8972972972968123, 'recall': 0.8299999999995851, 'f1_score': 0.8623376622872903, 'true_positives': 166, 'false_positives': 19, 'false_negatives': 34, 'true_negatives': 781}
+2025-03-17 00:22:41,228 - medical_diagnosis - INFO - Round 21 metrics: {'loss': 0.1461193163394928, 'accuracy': 0.9470000267028809, 'precision': 0.8972972972968123, 'recall': 0.8299999999995851, 'f1_score': 0.8623376622872903, 'true_positives': 166, 'false_positives': 19, 'false_negatives': 34, 'true_negatives': 781}
+2025-03-17 00:22:44,041 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:22:44,041 - medical_diagnosis - INFO - No improvement for 3 rounds
+2025-03-17 00:22:44,041 - medical_diagnosis - INFO - Round 21 completed in 20.32 seconds
+2025-03-17 00:22:44,042 - medical_diagnosis - INFO - Starting round 22/50
+2025-03-17 00:22:44,042 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:22:44,044 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:22:44,049 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:22:46,224 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2574
+2025-03-17 00:22:48,323 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2350
+2025-03-17 00:22:50,258 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2297
+2025-03-17 00:22:50,400 - zkml.federated - INFO - Local update computed in 6.36 seconds
+2025-03-17 00:22:50,401 - zkml.federated - INFO - Average loss: 0.2407, DP noise scale: 0.016149
+2025-03-17 00:22:50,402 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.2407, noise scale: 0.016149
+2025-03-17 00:22:50,403 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:22:50,404 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:22:50,404 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:22:50,405 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:22:50,409 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:22:52,332 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2650
+2025-03-17 00:22:54,091 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2210
+2025-03-17 00:22:55,785 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2255
+2025-03-17 00:22:55,970 - zkml.federated - INFO - Local update computed in 5.56 seconds
+2025-03-17 00:22:55,971 - zkml.federated - INFO - Average loss: 0.2372, DP noise scale: 0.016149
+2025-03-17 00:22:55,972 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2372, noise scale: 0.016149
+2025-03-17 00:22:55,974 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:22:55,974 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:22:55,974 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:22:55,975 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:22:55,980 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:22:57,734 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2532
+2025-03-17 00:22:59,665 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2297
+2025-03-17 00:23:01,579 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2129
+2025-03-17 00:23:01,723 - zkml.federated - INFO - Local update computed in 5.75 seconds
+2025-03-17 00:23:01,723 - zkml.federated - INFO - Average loss: 0.2319, DP noise scale: 0.016149
+2025-03-17 00:23:01,724 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.2319, noise scale: 0.016149
+2025-03-17 00:23:01,725 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:23:01,726 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:23:01,726 - medical_diagnosis - INFO - Average loss for round 22: 0.2366
+2025-03-17 00:23:01,727 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:23:01,727 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:23:01,727 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:23:01,764 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:23:01,782 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:23:01,783 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:23:01,853 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_22.pt
+2025-03-17 00:23:01,853 - zkml.federated - INFO - Update applied, completed round 22
+2025-03-17 00:23:01,854 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:23:01,854 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:23:02,135 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.1510382616519928, 'accuracy': 0.949999988079071, 'precision': 0.8640776699024932, 'recall': 0.889999999999555, 'f1_score': 0.8768472905899731, 'true_positives': 178, 'false_positives': 28, 'false_negatives': 22, 'true_negatives': 772}
+2025-03-17 00:23:02,136 - medical_diagnosis - INFO - Round 22 metrics: {'loss': 0.1510382616519928, 'accuracy': 0.949999988079071, 'precision': 0.8640776699024932, 'recall': 0.889999999999555, 'f1_score': 0.8768472905899731, 'true_positives': 178, 'false_positives': 28, 'false_negatives': 22, 'true_negatives': 772}
+2025-03-17 00:23:05,048 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:23:05,049 - medical_diagnosis - INFO - No improvement for 4 rounds
+2025-03-17 00:23:05,049 - medical_diagnosis - INFO - Round 22 completed in 21.01 seconds
+2025-03-17 00:23:05,049 - medical_diagnosis - INFO - Starting round 23/50
+2025-03-17 00:23:05,050 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:23:05,051 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:23:05,054 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:23:07,646 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2704
+2025-03-17 00:23:09,351 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2281
+2025-03-17 00:23:11,067 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2208
+2025-03-17 00:23:11,226 - zkml.federated - INFO - Local update computed in 6.17 seconds
+2025-03-17 00:23:11,227 - zkml.federated - INFO - Average loss: 0.2397, DP noise scale: 0.016149
+2025-03-17 00:23:11,227 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.2397, noise scale: 0.016149
+2025-03-17 00:23:11,228 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:23:11,229 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:23:11,229 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:23:11,230 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:23:11,233 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:23:13,111 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2386
+2025-03-17 00:23:14,982 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2340
+2025-03-17 00:23:16,859 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2129
+2025-03-17 00:23:17,015 - zkml.federated - INFO - Local update computed in 5.78 seconds
+2025-03-17 00:23:17,015 - zkml.federated - INFO - Average loss: 0.2285, DP noise scale: 0.016149
+2025-03-17 00:23:17,016 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2285, noise scale: 0.016149
+2025-03-17 00:23:17,017 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:23:17,017 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:23:17,017 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:23:17,018 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:23:17,022 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:23:18,902 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2507
+2025-03-17 00:23:20,771 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2325
+2025-03-17 00:23:22,602 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2231
+2025-03-17 00:23:22,760 - zkml.federated - INFO - Local update computed in 5.74 seconds
+2025-03-17 00:23:22,761 - zkml.federated - INFO - Average loss: 0.2354, DP noise scale: 0.016149
+2025-03-17 00:23:22,762 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.2354, noise scale: 0.016149
+2025-03-17 00:23:22,762 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:23:22,763 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:23:22,763 - medical_diagnosis - INFO - Average loss for round 23: 0.2345
+2025-03-17 00:23:22,764 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:23:22,764 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:23:22,764 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:23:22,802 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:23:22,813 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:23:22,814 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:23:22,883 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_23.pt
+2025-03-17 00:23:22,884 - zkml.federated - INFO - Update applied, completed round 23
+2025-03-17 00:23:22,884 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:23:22,884 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:23:23,170 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.20143094384670257, 'accuracy': 0.949999988079071, 'precision': 0.8472222222218301, 'recall': 0.9149999999995425, 'f1_score': 0.8798076922573432, 'true_positives': 183, 'false_positives': 33, 'false_negatives': 17, 'true_negatives': 767}
+2025-03-17 00:23:23,170 - medical_diagnosis - INFO - Round 23 metrics: {'loss': 0.20143094384670257, 'accuracy': 0.949999988079071, 'precision': 0.8472222222218301, 'recall': 0.9149999999995425, 'f1_score': 0.8798076922573432, 'true_positives': 183, 'false_positives': 33, 'false_negatives': 17, 'true_negatives': 767}
+2025-03-17 00:23:25,743 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:23:25,744 - medical_diagnosis - INFO - No improvement for 5 rounds
+2025-03-17 00:23:25,744 - medical_diagnosis - INFO - Round 23 completed in 20.69 seconds
+2025-03-17 00:23:25,745 - medical_diagnosis - INFO - Starting round 24/50
+2025-03-17 00:23:25,745 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:23:25,746 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:23:25,751 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:23:27,584 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2560
+2025-03-17 00:23:29,435 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2256
+2025-03-17 00:23:31,300 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2293
+2025-03-17 00:23:31,463 - zkml.federated - INFO - Local update computed in 5.72 seconds
+2025-03-17 00:23:31,464 - zkml.federated - INFO - Average loss: 0.2370, DP noise scale: 0.016149
+2025-03-17 00:23:31,466 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.2370, noise scale: 0.016149
+2025-03-17 00:23:31,467 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:23:31,467 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:23:31,468 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:23:31,468 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:23:31,472 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:23:33,323 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2303
+2025-03-17 00:23:35,036 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2195
+2025-03-17 00:23:36,767 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2180
+2025-03-17 00:23:36,903 - zkml.federated - INFO - Local update computed in 5.43 seconds
+2025-03-17 00:23:36,904 - zkml.federated - INFO - Average loss: 0.2226, DP noise scale: 0.016149
+2025-03-17 00:23:36,905 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2226, noise scale: 0.016149
+2025-03-17 00:23:36,906 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:23:36,906 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:23:36,907 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:23:36,907 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:23:36,912 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:23:38,568 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2598
+2025-03-17 00:23:40,246 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2649
+2025-03-17 00:23:41,967 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2234
+2025-03-17 00:23:42,128 - zkml.federated - INFO - Local update computed in 5.22 seconds
+2025-03-17 00:23:42,128 - zkml.federated - INFO - Average loss: 0.2494, DP noise scale: 0.016149
+2025-03-17 00:23:42,129 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.2494, noise scale: 0.016149
+2025-03-17 00:23:42,130 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:23:42,131 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:23:42,131 - medical_diagnosis - INFO - Average loss for round 24: 0.2363
+2025-03-17 00:23:42,132 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:23:42,132 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:23:42,132 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:23:42,165 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:23:42,166 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:23:42,167 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:23:42,236 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_24.pt
+2025-03-17 00:23:42,236 - zkml.federated - INFO - Update applied, completed round 24
+2025-03-17 00:23:42,237 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:23:42,237 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:23:42,510 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.1538167462348938, 'accuracy': 0.9509999752044678, 'precision': 0.8719211822655804, 'recall': 0.8849999999995576, 'f1_score': 0.878411910619542, 'true_positives': 177, 'false_positives': 26, 'false_negatives': 23, 'true_negatives': 774}
+2025-03-17 00:23:42,511 - medical_diagnosis - INFO - Round 24 metrics: {'loss': 0.1538167462348938, 'accuracy': 0.9509999752044678, 'precision': 0.8719211822655804, 'recall': 0.8849999999995576, 'f1_score': 0.878411910619542, 'true_positives': 177, 'false_positives': 26, 'false_negatives': 23, 'true_negatives': 774}
+2025-03-17 00:23:45,170 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:23:45,170 - medical_diagnosis - INFO - No improvement for 6 rounds
+2025-03-17 00:23:45,171 - medical_diagnosis - INFO - Round 24 completed in 19.43 seconds
+2025-03-17 00:23:45,171 - medical_diagnosis - INFO - Starting round 25/50
+2025-03-17 00:23:45,172 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:23:45,173 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:23:45,177 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:23:47,042 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2803
+2025-03-17 00:23:48,905 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2273
+2025-03-17 00:23:50,798 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2218
+2025-03-17 00:23:50,950 - zkml.federated - INFO - Local update computed in 5.78 seconds
+2025-03-17 00:23:50,951 - zkml.federated - INFO - Average loss: 0.2432, DP noise scale: 0.016149
+2025-03-17 00:23:50,952 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.2432, noise scale: 0.016149
+2025-03-17 00:23:50,953 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:23:50,953 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:23:50,953 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:23:50,954 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:23:50,958 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:23:52,821 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2807
+2025-03-17 00:23:54,680 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2171
+2025-03-17 00:23:56,581 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2163
+2025-03-17 00:23:56,727 - zkml.federated - INFO - Local update computed in 5.77 seconds
+2025-03-17 00:23:56,727 - zkml.federated - INFO - Average loss: 0.2380, DP noise scale: 0.016149
+2025-03-17 00:23:56,728 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2380, noise scale: 0.016149
+2025-03-17 00:23:56,729 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:23:56,729 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:23:56,729 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:23:56,730 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:23:56,734 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:23:58,583 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2352
+2025-03-17 00:24:00,337 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2203
+2025-03-17 00:24:02,021 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2073
+2025-03-17 00:24:02,189 - zkml.federated - INFO - Local update computed in 5.46 seconds
+2025-03-17 00:24:02,190 - zkml.federated - INFO - Average loss: 0.2209, DP noise scale: 0.016149
+2025-03-17 00:24:02,191 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.2209, noise scale: 0.016149
+2025-03-17 00:24:02,192 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:24:02,192 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:24:02,193 - medical_diagnosis - INFO - Average loss for round 25: 0.2340
+2025-03-17 00:24:02,193 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:24:02,193 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:24:02,194 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:24:02,239 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:24:02,241 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:24:02,241 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:24:02,319 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_25.pt
+2025-03-17 00:24:02,320 - zkml.federated - INFO - Update applied, completed round 25
+2025-03-17 00:24:02,320 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:24:02,320 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:24:02,565 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.15736132168769837, 'accuracy': 0.9490000009536743, 'precision': 0.8983957219246533, 'recall': 0.8399999999995801, 'f1_score': 0.8682170542131737, 'true_positives': 168, 'false_positives': 19, 'false_negatives': 32, 'true_negatives': 781}
+2025-03-17 00:24:02,565 - medical_diagnosis - INFO - Round 25 metrics: {'loss': 0.15736132168769837, 'accuracy': 0.9490000009536743, 'precision': 0.8983957219246533, 'recall': 0.8399999999995801, 'f1_score': 0.8682170542131737, 'true_positives': 168, 'false_positives': 19, 'false_negatives': 32, 'true_negatives': 781}
+2025-03-17 00:24:05,197 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:24:05,198 - medical_diagnosis - INFO - No improvement for 7 rounds
+2025-03-17 00:24:05,198 - medical_diagnosis - INFO - Round 25 completed in 20.03 seconds
+2025-03-17 00:24:05,198 - medical_diagnosis - INFO - Starting round 26/50
+2025-03-17 00:24:05,199 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:24:05,200 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:24:05,204 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:24:07,028 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2282
+2025-03-17 00:24:08,894 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2226
+2025-03-17 00:24:10,801 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2471
+2025-03-17 00:24:10,945 - zkml.federated - INFO - Local update computed in 5.74 seconds
+2025-03-17 00:24:10,947 - zkml.federated - INFO - Average loss: 0.2326, DP noise scale: 0.016149
+2025-03-17 00:24:10,948 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.2326, noise scale: 0.016149
+2025-03-17 00:24:10,949 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:24:10,950 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:24:10,951 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:24:10,951 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:24:10,956 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:24:12,789 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2311
+2025-03-17 00:24:14,514 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2271
+2025-03-17 00:24:16,200 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2168
+2025-03-17 00:24:16,345 - zkml.federated - INFO - Local update computed in 5.39 seconds
+2025-03-17 00:24:16,346 - zkml.federated - INFO - Average loss: 0.2250, DP noise scale: 0.016149
+2025-03-17 00:24:16,347 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2250, noise scale: 0.016149
+2025-03-17 00:24:16,348 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:24:16,348 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:24:16,349 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:24:16,350 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:24:16,353 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:24:18,017 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2527
+2025-03-17 00:24:19,687 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2235
+2025-03-17 00:24:21,368 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2149
+2025-03-17 00:24:21,508 - zkml.federated - INFO - Local update computed in 5.16 seconds
+2025-03-17 00:24:21,508 - zkml.federated - INFO - Average loss: 0.2303, DP noise scale: 0.016149
+2025-03-17 00:24:21,509 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.2303, noise scale: 0.016149
+2025-03-17 00:24:21,510 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:24:21,511 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:24:21,511 - medical_diagnosis - INFO - Average loss for round 26: 0.2293
+2025-03-17 00:24:21,512 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:24:21,512 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:24:21,512 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:24:21,552 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:24:21,554 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:24:21,555 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:24:21,627 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_26.pt
+2025-03-17 00:24:21,628 - zkml.federated - INFO - Update applied, completed round 26
+2025-03-17 00:24:21,628 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:24:21,628 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:24:21,860 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.18852963292598723, 'accuracy': 0.9449999928474426, 'precision': 0.8536585365849495, 'recall': 0.8749999999995626, 'f1_score': 0.8641975308137784, 'true_positives': 175, 'false_positives': 30, 'false_negatives': 25, 'true_negatives': 770}
+2025-03-17 00:24:21,861 - medical_diagnosis - INFO - Round 26 metrics: {'loss': 0.18852963292598723, 'accuracy': 0.9449999928474426, 'precision': 0.8536585365849495, 'recall': 0.8749999999995626, 'f1_score': 0.8641975308137784, 'true_positives': 175, 'false_positives': 30, 'false_negatives': 25, 'true_negatives': 770}
+2025-03-17 00:24:24,631 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:24:24,632 - medical_diagnosis - INFO - No improvement for 8 rounds
+2025-03-17 00:24:24,632 - medical_diagnosis - INFO - Round 26 completed in 19.43 seconds
+2025-03-17 00:24:24,633 - medical_diagnosis - INFO - Starting round 27/50
+2025-03-17 00:24:24,633 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:24:24,635 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:24:24,639 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:24:26,569 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2357
+2025-03-17 00:24:28,443 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2167
+2025-03-17 00:24:30,256 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2167
+2025-03-17 00:24:30,433 - zkml.federated - INFO - Local update computed in 5.80 seconds
+2025-03-17 00:24:30,434 - zkml.federated - INFO - Average loss: 0.2230, DP noise scale: 0.016149
+2025-03-17 00:24:30,435 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.2230, noise scale: 0.016149
+2025-03-17 00:24:30,436 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:24:30,437 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:24:30,437 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:24:30,438 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:24:30,442 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:24:32,237 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2473
+2025-03-17 00:24:34,391 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2366
+2025-03-17 00:24:36,134 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2342
+2025-03-17 00:24:36,316 - zkml.federated - INFO - Local update computed in 5.88 seconds
+2025-03-17 00:24:36,317 - zkml.federated - INFO - Average loss: 0.2394, DP noise scale: 0.016149
+2025-03-17 00:24:36,318 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2394, noise scale: 0.016149
+2025-03-17 00:24:36,319 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:24:36,319 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:24:36,320 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:24:36,321 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:24:36,326 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:24:38,056 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2324
+2025-03-17 00:24:39,790 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2138
+2025-03-17 00:24:41,633 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2079
+2025-03-17 00:24:41,807 - zkml.federated - INFO - Local update computed in 5.49 seconds
+2025-03-17 00:24:41,808 - zkml.federated - INFO - Average loss: 0.2180, DP noise scale: 0.016149
+2025-03-17 00:24:41,809 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.2180, noise scale: 0.016149
+2025-03-17 00:24:41,810 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:24:41,811 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:24:41,811 - medical_diagnosis - INFO - Average loss for round 27: 0.2268
+2025-03-17 00:24:41,812 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:24:41,812 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:24:41,813 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:24:41,850 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:24:41,868 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:24:41,869 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:24:41,956 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_27.pt
+2025-03-17 00:24:41,957 - zkml.federated - INFO - Update applied, completed round 27
+2025-03-17 00:24:41,957 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:24:41,958 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:24:42,255 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.17292437636852265, 'accuracy': 0.949999988079071, 'precision': 0.878787878787435, 'recall': 0.869999999999565, 'f1_score': 0.8743718592460443, 'true_positives': 174, 'false_positives': 24, 'false_negatives': 26, 'true_negatives': 776}
+2025-03-17 00:24:42,256 - medical_diagnosis - INFO - Round 27 metrics: {'loss': 0.17292437636852265, 'accuracy': 0.949999988079071, 'precision': 0.878787878787435, 'recall': 0.869999999999565, 'f1_score': 0.8743718592460443, 'true_positives': 174, 'false_positives': 24, 'false_negatives': 26, 'true_negatives': 776}
+2025-03-17 00:24:44,898 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:24:44,899 - medical_diagnosis - INFO - No improvement for 9 rounds
+2025-03-17 00:24:44,899 - medical_diagnosis - INFO - Round 27 completed in 20.27 seconds
+2025-03-17 00:24:44,899 - medical_diagnosis - INFO - Starting round 28/50
+2025-03-17 00:24:44,900 - medical_diagnosis - INFO - Computing update for party 1/3
+2025-03-17 00:24:44,901 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:24:44,905 - zkml.federated - INFO - Calculated class weights: tensor([0.6252, 2.4963])
+2025-03-17 00:24:46,766 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2349
+2025-03-17 00:24:48,538 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2089
+2025-03-17 00:24:50,293 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2084
+2025-03-17 00:24:50,449 - zkml.federated - INFO - Local update computed in 5.55 seconds
+2025-03-17 00:24:50,449 - zkml.federated - INFO - Average loss: 0.2174, DP noise scale: 0.016149
+2025-03-17 00:24:50,450 - medical_diagnosis - INFO - Party 1 computed update with loss: 0.2174, noise scale: 0.016149
+2025-03-17 00:24:50,451 - medical_diagnosis - INFO - Party 1 compliance verification: False
+2025-03-17 00:24:50,452 - medical_diagnosis - WARNING - Party 1 failed compliance verification!
+2025-03-17 00:24:50,452 - medical_diagnosis - INFO - Computing update for party 2/3
+2025-03-17 00:24:50,452 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 00:24:50,456 - zkml.federated - INFO - Calculated class weights: tensor([0.6246, 2.5056])
+2025-03-17 00:24:52,276 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2399
+2025-03-17 00:24:54,112 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2393
+2025-03-17 00:24:55,949 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2356
+2025-03-17 00:24:56,109 - zkml.federated - INFO - Local update computed in 5.66 seconds
+2025-03-17 00:24:56,109 - zkml.federated - INFO - Average loss: 0.2382, DP noise scale: 0.016149
+2025-03-17 00:24:56,110 - medical_diagnosis - INFO - Party 2 computed update with loss: 0.2382, noise scale: 0.016149
+2025-03-17 00:24:56,111 - medical_diagnosis - INFO - Party 2 compliance verification: False
+2025-03-17 00:24:56,111 - medical_diagnosis - WARNING - Party 2 failed compliance verification!
+2025-03-17 00:24:56,111 - medical_diagnosis - INFO - Computing update for party 3/3
+2025-03-17 00:24:56,112 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 00:24:56,116 - zkml.federated - INFO - Calculated class weights: tensor([0.6251, 2.4981])
+2025-03-17 00:24:57,975 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.2544
+2025-03-17 00:24:59,805 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.2226
+2025-03-17 00:25:01,645 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.2119
+2025-03-17 00:25:01,807 - zkml.federated - INFO - Local update computed in 5.69 seconds
+2025-03-17 00:25:01,808 - zkml.federated - INFO - Average loss: 0.2297, DP noise scale: 0.016149
+2025-03-17 00:25:01,809 - medical_diagnosis - INFO - Party 3 computed update with loss: 0.2297, noise scale: 0.016149
+2025-03-17 00:25:01,809 - medical_diagnosis - INFO - Party 3 compliance verification: False
+2025-03-17 00:25:01,810 - medical_diagnosis - WARNING - Party 3 failed compliance verification!
+2025-03-17 00:25:01,810 - medical_diagnosis - INFO - Average loss for round 28: 0.2284
+2025-03-17 00:25:01,810 - medical_diagnosis - INFO - Average noise scale: 0.016149
+2025-03-17 00:25:01,810 - medical_diagnosis - INFO - Aggregating updates...
+2025-03-17 00:25:01,811 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 00:25:01,859 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 00:25:01,860 - medical_diagnosis - INFO - Applying aggregated update...
+2025-03-17 00:25:01,861 - zkml.federated - INFO - Applying aggregated update to model
+2025-03-17 00:25:01,932 - zkml.federated - INFO - Checkpoint saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/checkpoints/model_round_28.pt
+2025-03-17 00:25:01,933 - zkml.federated - INFO - Update applied, completed round 28
+2025-03-17 00:25:01,933 - medical_diagnosis - INFO - Evaluating model...
+2025-03-17 00:25:01,933 - zkml.federated - INFO - Evaluating model on 1000 samples
+2025-03-17 00:25:02,195 - zkml.federated - INFO - Evaluation metrics: {'loss': 0.16641489350795746, 'accuracy': 0.9480000138282776, 'precision': 0.8775510204077156, 'recall': 0.8599999999995701, 'f1_score': 0.8686868686364352, 'true_positives': 172, 'false_positives': 24, 'false_negatives': 28, 'true_negatives': 776}
+2025-03-17 00:25:02,196 - medical_diagnosis - INFO - Round 28 metrics: {'loss': 0.16641489350795746, 'accuracy': 0.9480000138282776, 'precision': 0.8775510204077156, 'recall': 0.8599999999995701, 'f1_score': 0.8686868686364352, 'true_positives': 172, 'false_positives': 24, 'false_negatives': 28, 'true_negatives': 776}
+2025-03-17 00:25:04,635 - medical_diagnosis - INFO - Training metrics plot saved to /home/afazzat/Desktop/zkml/results/run_20250317_001648/training_curves.png
+2025-03-17 00:25:04,636 - medical_diagnosis - INFO - No improvement for 10 rounds
+2025-03-17 00:25:04,636 - medical_diagnosis - INFO - Early stopping: no improvement in performance for 10 rounds
+2025-03-17 00:25:04,637 - medical_diagnosis - INFO - 
+Training complete!
+2025-03-17 00:25:04,637 - medical_diagnosis - INFO - Best performance at round 18:
+2025-03-17 00:25:04,637 - medical_diagnosis - INFO - Accuracy: 0.9570
+2025-03-17 00:25:04,638 - medical_diagnosis - INFO - F1 Score: 0.8922
+2025-03-17 00:25:04,638 - medical_diagnosis - INFO - Precision: 0.8945
+2025-03-17 00:25:04,639 - medical_diagnosis - INFO - Recall: 0.8900
+2025-03-17 00:25:04,640 - medical_diagnosis - INFO - Results saved to: /home/afazzat/Desktop/zkml/results/run_20250317_001648
+2025-03-17 01:09:34,387 - medical_diagnosis - INFO - Results will be saved to: /home/afazzat/Desktop/zkml/results/run_20250317_010934
+2025-03-17 01:09:34,387 - medical_diagnosis - INFO - Loading zkml modules...
+2025-03-17 01:09:34,489 - medical_diagnosis - INFO - Generating 5000 synthetic medical data samples...
+2025-03-17 01:09:34,525 - medical_diagnosis - INFO - Generated features shape: (5000, 27)
+2025-03-17 01:09:34,526 - medical_diagnosis - INFO - Class distribution: [4000 1000]
+2025-03-17 01:09:34,762 - medical_diagnosis - INFO - Feature ranges:
+                0            1            2   ...           24           25           26
+count  5000.000000  5000.000000  5000.000000  ...  5000.000000  5000.000000  5000.000000
+mean     50.146698   120.433943    99.845242  ...     0.093468     3.549452     2.262201
+std      15.269973    20.083096    25.108627  ...     0.234303    12.818078     5.686330
+min      -8.836004    44.503086     6.830157  ...     0.000000  -735.720090  -273.294383
+25%      39.867878   107.132143    82.515124  ...     0.000000     2.140303     0.942321
+50%      50.189960   120.255529   100.081746  ...     0.000000     2.980188     1.737008
+75%      60.604615   133.630529   117.429175  ...     0.000000     4.140974     2.857893
+max     108.893566   199.905787   193.706541  ...     1.738034   332.861482   245.258255
+
+[8 rows x 27 columns]
+2025-03-17 01:09:36,023 - medical_diagnosis - INFO - Splitting data among 3 parties...
+2025-03-17 01:09:36,069 - medical_diagnosis - INFO - Party 0 data shape: (1334, 27)
+2025-03-17 01:09:36,069 - medical_diagnosis - INFO - Party 0 class distribution: [1082  252]
+2025-03-17 01:09:36,070 - medical_diagnosis - INFO - Party 1 data shape: (1333, 27)
+2025-03-17 01:09:36,070 - medical_diagnosis - INFO - Party 1 class distribution: [1059  274]
+2025-03-17 01:09:36,071 - medical_diagnosis - INFO - Party 2 data shape: (1333, 27)
+2025-03-17 01:09:36,071 - medical_diagnosis - INFO - Party 2 class distribution: [1059  274]
+2025-03-17 01:09:36,269 - medical_diagnosis - ERROR - Error during training:
+2025-03-17 01:09:36,270 - medical_diagnosis - ERROR - Traceback (most recent call last):
+  File "/home/afazzat/Desktop/zkml/examples/medical_diagnosis.py", line 313, in main
+    learner = SecureFederatedLearner(
+TypeError: SecureFederatedLearner.__init__() got an unexpected keyword argument 'batch_size'
+
+2025-03-17 01:09:36,270 - medical_diagnosis - ERROR - ERROR: SecureFederatedLearner.__init__() got an unexpected keyword argument 'batch_size'
+2025-03-17 01:10:34,329 - medical_diagnosis - INFO - Results will be saved to: /home/afazzat/Desktop/zkml/results/run_20250317_011034
+2025-03-17 01:10:34,330 - medical_diagnosis - INFO - Loading zkml modules...
+2025-03-17 01:10:34,365 - medical_diagnosis - INFO - Generating 5000 synthetic medical data samples...
+2025-03-17 01:10:34,392 - medical_diagnosis - INFO - Generated features shape: (5000, 27)
+2025-03-17 01:10:34,393 - medical_diagnosis - INFO - Class distribution: [4000 1000]
+2025-03-17 01:10:34,661 - medical_diagnosis - INFO - Feature ranges:
+                0            1            2   ...           24           25           26
+count  5000.000000  5000.000000  5000.000000  ...  5000.000000  5000.000000  5000.000000
+mean     50.146698   120.433943    99.845242  ...     0.093468     3.549452     2.262201
+std      15.269973    20.083096    25.108627  ...     0.234303    12.818078     5.686330
+min      -8.836004    44.503086     6.830157  ...     0.000000  -735.720090  -273.294383
+25%      39.867878   107.132143    82.515124  ...     0.000000     2.140303     0.942321
+50%      50.189960   120.255529   100.081746  ...     0.000000     2.980188     1.737008
+75%      60.604615   133.630529   117.429175  ...     0.000000     4.140974     2.857893
+max     108.893566   199.905787   193.706541  ...     1.738034   332.861482   245.258255
+
+[8 rows x 27 columns]
+2025-03-17 01:10:35,888 - medical_diagnosis - INFO - Splitting data among 3 parties...
+2025-03-17 01:10:35,947 - medical_diagnosis - INFO - Party 0 data shape: (1334, 27)
+2025-03-17 01:10:35,948 - medical_diagnosis - INFO - Party 0 class distribution: [1082  252]
+2025-03-17 01:10:35,948 - medical_diagnosis - INFO - Party 1 data shape: (1333, 27)
+2025-03-17 01:10:35,949 - medical_diagnosis - INFO - Party 1 class distribution: [1059  274]
+2025-03-17 01:10:35,949 - medical_diagnosis - INFO - Party 2 data shape: (1333, 27)
+2025-03-17 01:10:35,950 - medical_diagnosis - INFO - Party 2 class distribution: [1059  274]
+2025-03-17 01:10:36,140 - zkml.federated - INFO - Initialized SecureFederatedLearner with 3 parties
+2025-03-17 01:10:36,140 - zkml.federated - INFO - DP parameters: epsilon=1.0, delta=1e-05
+2025-03-17 01:10:36,141 - zkml.federated - INFO - Secure aggregation: True
+2025-03-17 01:10:36,141 - medical_diagnosis - INFO - Starting federated training...
+2025-03-17 01:10:36,143 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 01:10:36,148 - zkml.federated - INFO - Calculated class weights: tensor([0.6165, 2.6468])
+2025-03-17 01:10:37,890 - zkml.federated - INFO - Epoch 1/3 - Loss: 16.9369
+2025-03-17 01:10:39,381 - zkml.federated - INFO - Epoch 2/3 - Loss: 1.9351
+2025-03-17 01:10:41,066 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.8619
+2025-03-17 01:10:41,196 - zkml.federated - INFO - Local update computed in 5.05 seconds
+2025-03-17 01:10:41,197 - zkml.federated - INFO - Average loss: 6.5780, DP noise scale: 0.048448
+2025-03-17 01:10:41,204 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:10:41,208 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:10:42,915 - zkml.federated - INFO - Epoch 1/3 - Loss: 3.7710
+2025-03-17 01:10:44,627 - zkml.federated - INFO - Epoch 2/3 - Loss: 1.1093
+2025-03-17 01:10:46,151 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.6761
+2025-03-17 01:10:46,335 - zkml.federated - INFO - Local update computed in 5.13 seconds
+2025-03-17 01:10:46,335 - zkml.federated - INFO - Average loss: 1.8521, DP noise scale: 0.048448
+2025-03-17 01:10:46,337 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:10:46,340 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:10:47,765 - zkml.federated - INFO - Epoch 1/3 - Loss: 1.4049
+2025-03-17 01:10:49,116 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.6058
+2025-03-17 01:10:50,623 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.5040
+2025-03-17 01:10:50,743 - zkml.federated - INFO - Local update computed in 4.41 seconds
+2025-03-17 01:10:50,744 - zkml.federated - INFO - Average loss: 0.8382, DP noise scale: 0.048448
+2025-03-17 01:10:50,745 - medical_diagnosis - ERROR - Error during training:
+2025-03-17 01:10:50,747 - medical_diagnosis - ERROR - Traceback (most recent call last):
+  File "/home/afazzat/Desktop/zkml/examples/medical_diagnosis.py", line 356, in main
+    avg_loss = np.mean(round_losses)
+  File "/home/afazzat/.local/lib/python3.10/site-packages/numpy/core/fromnumeric.py", line 3504, in mean
+    return _methods._mean(a, axis=axis, dtype=dtype,
+  File "/home/afazzat/.local/lib/python3.10/site-packages/numpy/core/_methods.py", line 118, in _mean
+    ret = umr_sum(arr, axis, dtype, out, keepdims, where=where)
+TypeError: unsupported operand type(s) for +: 'dict' and 'float'
+
+2025-03-17 01:10:50,747 - medical_diagnosis - ERROR - ERROR: unsupported operand type(s) for +: 'dict' and 'float'
+2025-03-17 01:11:34,418 - medical_diagnosis - INFO - Results will be saved to: /home/afazzat/Desktop/zkml/results/run_20250317_011134
+2025-03-17 01:11:34,418 - medical_diagnosis - INFO - Loading zkml modules...
+2025-03-17 01:11:34,466 - medical_diagnosis - INFO - Generating 5000 synthetic medical data samples...
+2025-03-17 01:11:34,493 - medical_diagnosis - INFO - Generated features shape: (5000, 27)
+2025-03-17 01:11:34,494 - medical_diagnosis - INFO - Class distribution: [4000 1000]
+2025-03-17 01:11:34,802 - medical_diagnosis - INFO - Feature ranges:
+                0            1            2   ...           24           25           26
+count  5000.000000  5000.000000  5000.000000  ...  5000.000000  5000.000000  5000.000000
+mean     50.146698   120.433943    99.845242  ...     0.093468     3.549452     2.262201
+std      15.269973    20.083096    25.108627  ...     0.234303    12.818078     5.686330
+min      -8.836004    44.503086     6.830157  ...     0.000000  -735.720090  -273.294383
+25%      39.867878   107.132143    82.515124  ...     0.000000     2.140303     0.942321
+50%      50.189960   120.255529   100.081746  ...     0.000000     2.980188     1.737008
+75%      60.604615   133.630529   117.429175  ...     0.000000     4.140974     2.857893
+max     108.893566   199.905787   193.706541  ...     1.738034   332.861482   245.258255
+
+[8 rows x 27 columns]
+2025-03-17 01:11:35,874 - medical_diagnosis - INFO - Splitting data among 3 parties...
+2025-03-17 01:11:35,927 - medical_diagnosis - INFO - Party 0 data shape: (1334, 27)
+2025-03-17 01:11:35,928 - medical_diagnosis - INFO - Party 0 class distribution: [1082  252]
+2025-03-17 01:11:35,929 - medical_diagnosis - INFO - Party 1 data shape: (1333, 27)
+2025-03-17 01:11:35,929 - medical_diagnosis - INFO - Party 1 class distribution: [1059  274]
+2025-03-17 01:11:35,930 - medical_diagnosis - INFO - Party 2 data shape: (1333, 27)
+2025-03-17 01:11:35,930 - medical_diagnosis - INFO - Party 2 class distribution: [1059  274]
+2025-03-17 01:11:36,075 - zkml.federated - INFO - Initialized SecureFederatedLearner with 3 parties
+2025-03-17 01:11:36,075 - zkml.federated - INFO - DP parameters: epsilon=1.0, delta=1e-05
+2025-03-17 01:11:36,076 - zkml.federated - INFO - Secure aggregation: True
+2025-03-17 01:11:36,076 - medical_diagnosis - INFO - Starting federated training...
+2025-03-17 01:11:36,078 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 01:11:36,082 - zkml.federated - INFO - Calculated class weights: tensor([0.6165, 2.6468])
+2025-03-17 01:11:37,755 - zkml.federated - INFO - Epoch 1/3 - Loss: 16.9369
+2025-03-17 01:11:39,139 - zkml.federated - INFO - Epoch 2/3 - Loss: 1.9351
+2025-03-17 01:11:40,640 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.8619
+2025-03-17 01:11:40,768 - zkml.federated - INFO - Local update computed in 4.69 seconds
+2025-03-17 01:11:40,769 - zkml.federated - INFO - Average loss: 6.5780, DP noise scale: 0.048448
+2025-03-17 01:11:40,776 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:11:40,779 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:11:42,216 - zkml.federated - INFO - Epoch 1/3 - Loss: 3.7710
+2025-03-17 01:11:43,578 - zkml.federated - INFO - Epoch 2/3 - Loss: 1.1093
+2025-03-17 01:11:44,933 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.6761
+2025-03-17 01:11:45,070 - zkml.federated - INFO - Local update computed in 4.29 seconds
+2025-03-17 01:11:45,070 - zkml.federated - INFO - Average loss: 1.8521, DP noise scale: 0.048448
+2025-03-17 01:11:45,071 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:11:45,074 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:11:46,441 - zkml.federated - INFO - Epoch 1/3 - Loss: 1.4049
+2025-03-17 01:11:47,890 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.6058
+2025-03-17 01:11:49,185 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.5040
+2025-03-17 01:11:49,309 - zkml.federated - INFO - Local update computed in 4.24 seconds
+2025-03-17 01:11:49,309 - zkml.federated - INFO - Average loss: 0.8382, DP noise scale: 0.048448
+2025-03-17 01:11:49,310 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 01:11:49,339 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 01:11:50,375 - medical_diagnosis - INFO - Round 1/50
+2025-03-17 01:11:50,375 - medical_diagnosis - INFO - Average Loss: 3.0894
+2025-03-17 01:11:50,376 - medical_diagnosis - INFO - Test Metrics: {'accuracy': 0.6790000200271606, 'precision': 0.3825242718446602, 'recall': 0.985, 'f1': 0.5510489510489511, 'roc_auc': 0.927175, 'pr_auc': 0.7502165937240948}
+2025-03-17 01:11:50,377 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 01:11:50,381 - zkml.federated - INFO - Calculated class weights: tensor([0.6165, 2.6468])
+2025-03-17 01:11:51,655 - zkml.federated - INFO - Epoch 1/3 - Loss: 1.1093
+2025-03-17 01:11:53,030 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.5628
+2025-03-17 01:11:54,333 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.5177
+2025-03-17 01:11:54,463 - zkml.federated - INFO - Local update computed in 4.08 seconds
+2025-03-17 01:11:54,463 - zkml.federated - INFO - Average loss: 0.7300, DP noise scale: 0.048448
+2025-03-17 01:11:54,465 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:11:54,469 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:11:55,756 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.8436
+2025-03-17 01:11:57,159 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.5260
+2025-03-17 01:11:58,831 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4482
+2025-03-17 01:11:59,008 - zkml.federated - INFO - Local update computed in 4.54 seconds
+2025-03-17 01:11:59,009 - zkml.federated - INFO - Average loss: 0.6059, DP noise scale: 0.048448
+2025-03-17 01:11:59,010 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:11:59,014 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:12:00,511 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.7541
+2025-03-17 01:12:02,080 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4906
+2025-03-17 01:12:03,635 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.5031
+2025-03-17 01:12:03,766 - zkml.federated - INFO - Local update computed in 4.76 seconds
+2025-03-17 01:12:03,767 - zkml.federated - INFO - Average loss: 0.5826, DP noise scale: 0.048448
+2025-03-17 01:12:03,768 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 01:12:03,797 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 01:12:05,129 - medical_diagnosis - INFO - Round 2/50
+2025-03-17 01:12:05,130 - medical_diagnosis - INFO - Average Loss: 0.6395
+2025-03-17 01:12:05,130 - medical_diagnosis - INFO - Test Metrics: {'accuracy': 0.8600000143051147, 'precision': 0.62, 'recall': 0.775, 'f1': 0.6888888888888889, 'roc_auc': 0.9287000000000001, 'pr_auc': 0.7554038673250802}
+2025-03-17 01:12:05,133 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 01:12:05,136 - zkml.federated - INFO - Calculated class weights: tensor([0.6165, 2.6468])
+2025-03-17 01:12:06,714 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.7414
+2025-03-17 01:12:08,328 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4663
+2025-03-17 01:12:09,915 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4536
+2025-03-17 01:12:10,088 - zkml.federated - INFO - Local update computed in 4.96 seconds
+2025-03-17 01:12:10,089 - zkml.federated - INFO - Average loss: 0.5538, DP noise scale: 0.048448
+2025-03-17 01:12:10,100 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:12:10,104 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:12:11,575 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.6904
+2025-03-17 01:12:12,889 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.5316
+2025-03-17 01:12:14,413 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4608
+2025-03-17 01:12:14,562 - zkml.federated - INFO - Local update computed in 4.46 seconds
+2025-03-17 01:12:14,563 - zkml.federated - INFO - Average loss: 0.5609, DP noise scale: 0.048448
+2025-03-17 01:12:14,564 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:12:14,568 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:12:16,172 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.6495
+2025-03-17 01:12:18,296 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4213
+2025-03-17 01:12:19,457 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4023
+2025-03-17 01:12:19,574 - zkml.federated - INFO - Local update computed in 5.01 seconds
+2025-03-17 01:12:19,574 - zkml.federated - INFO - Average loss: 0.4910, DP noise scale: 0.048448
+2025-03-17 01:12:19,575 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 01:12:19,602 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 01:12:20,377 - medical_diagnosis - INFO - Round 3/50
+2025-03-17 01:12:20,377 - medical_diagnosis - INFO - Average Loss: 0.5352
+2025-03-17 01:12:20,377 - medical_diagnosis - INFO - Test Metrics: {'accuracy': 0.7749999761581421, 'precision': 0.46958637469586373, 'recall': 0.965, 'f1': 0.6317512274959084, 'roc_auc': 0.92855, 'pr_auc': 0.7541683276156079}
+2025-03-17 01:12:20,379 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 01:12:20,382 - zkml.federated - INFO - Calculated class weights: tensor([0.6165, 2.6468])
+2025-03-17 01:12:21,477 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.7166
+2025-03-17 01:12:22,568 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4828
+2025-03-17 01:12:23,636 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4598
+2025-03-17 01:12:23,741 - zkml.federated - INFO - Local update computed in 3.36 seconds
+2025-03-17 01:12:23,742 - zkml.federated - INFO - Average loss: 0.5531, DP noise scale: 0.048448
+2025-03-17 01:12:23,751 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:12:23,753 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:12:24,856 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.8076
+2025-03-17 01:12:25,952 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.5937
+2025-03-17 01:12:27,038 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.5779
+2025-03-17 01:12:27,144 - zkml.federated - INFO - Local update computed in 3.39 seconds
+2025-03-17 01:12:27,144 - zkml.federated - INFO - Average loss: 0.6597, DP noise scale: 0.048448
+2025-03-17 01:12:27,146 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:12:27,148 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:12:28,270 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.5703
+2025-03-17 01:12:29,425 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4755
+2025-03-17 01:12:30,538 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4190
+2025-03-17 01:12:30,647 - zkml.federated - INFO - Local update computed in 3.50 seconds
+2025-03-17 01:12:30,648 - zkml.federated - INFO - Average loss: 0.4883, DP noise scale: 0.048448
+2025-03-17 01:12:30,649 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 01:12:30,677 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 01:12:31,399 - medical_diagnosis - INFO - Round 4/50
+2025-03-17 01:12:31,399 - medical_diagnosis - INFO - Average Loss: 0.5670
+2025-03-17 01:12:31,399 - medical_diagnosis - INFO - Test Metrics: {'accuracy': 0.8330000042915344, 'precision': 0.5523809523809524, 'recall': 0.87, 'f1': 0.6757281553398059, 'roc_auc': 0.92213125, 'pr_auc': 0.7437424163655499}
+2025-03-17 01:12:31,400 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 01:12:31,402 - zkml.federated - INFO - Calculated class weights: tensor([0.6165, 2.6468])
+2025-03-17 01:12:32,530 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.5651
+2025-03-17 01:12:34,071 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4033
+2025-03-17 01:12:35,735 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3974
+2025-03-17 01:12:35,845 - zkml.federated - INFO - Local update computed in 4.44 seconds
+2025-03-17 01:12:35,845 - zkml.federated - INFO - Average loss: 0.4553, DP noise scale: 0.048448
+2025-03-17 01:12:35,847 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:12:35,850 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:12:37,126 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.5568
+2025-03-17 01:12:38,448 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4472
+2025-03-17 01:12:39,753 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4160
+2025-03-17 01:12:39,914 - zkml.federated - INFO - Local update computed in 4.07 seconds
+2025-03-17 01:12:39,915 - zkml.federated - INFO - Average loss: 0.4733, DP noise scale: 0.048448
+2025-03-17 01:12:39,916 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:12:39,921 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:12:41,799 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.5085
+2025-03-17 01:12:43,384 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.3740
+2025-03-17 01:12:44,849 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3950
+2025-03-17 01:12:44,988 - zkml.federated - INFO - Local update computed in 5.07 seconds
+2025-03-17 01:12:44,988 - zkml.federated - INFO - Average loss: 0.4259, DP noise scale: 0.048448
+2025-03-17 01:12:44,990 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 01:12:45,026 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 01:12:45,978 - medical_diagnosis - INFO - Round 5/50
+2025-03-17 01:12:45,978 - medical_diagnosis - INFO - Average Loss: 0.4515
+2025-03-17 01:12:45,979 - medical_diagnosis - INFO - Test Metrics: {'accuracy': 0.8209999799728394, 'precision': 0.5304347826086957, 'recall': 0.915, 'f1': 0.671559633027523, 'roc_auc': 0.92696875, 'pr_auc': 0.754182981672806}
+2025-03-17 01:12:45,980 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 01:12:45,983 - zkml.federated - INFO - Calculated class weights: tensor([0.6165, 2.6468])
+2025-03-17 01:12:47,100 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.5612
+2025-03-17 01:12:48,325 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4151
+2025-03-17 01:12:49,640 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3907
+2025-03-17 01:12:49,785 - zkml.federated - INFO - Local update computed in 3.80 seconds
+2025-03-17 01:12:49,785 - zkml.federated - INFO - Average loss: 0.4557, DP noise scale: 0.048448
+2025-03-17 01:12:49,788 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:12:49,792 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:12:51,030 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.6663
+2025-03-17 01:12:52,488 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4446
+2025-03-17 01:12:53,963 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4216
+2025-03-17 01:12:54,081 - zkml.federated - INFO - Local update computed in 4.29 seconds
+2025-03-17 01:12:54,082 - zkml.federated - INFO - Average loss: 0.5108, DP noise scale: 0.048448
+2025-03-17 01:12:54,083 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:12:54,087 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:12:55,364 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.4697
+2025-03-17 01:12:56,534 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4050
+2025-03-17 01:12:57,686 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4148
+2025-03-17 01:12:57,788 - zkml.federated - INFO - Local update computed in 3.70 seconds
+2025-03-17 01:12:57,788 - zkml.federated - INFO - Average loss: 0.4298, DP noise scale: 0.048448
+2025-03-17 01:12:57,789 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 01:12:57,815 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 01:12:58,531 - medical_diagnosis - INFO - Round 6/50
+2025-03-17 01:12:58,532 - medical_diagnosis - INFO - Average Loss: 0.4654
+2025-03-17 01:12:58,532 - medical_diagnosis - INFO - Test Metrics: {'accuracy': 0.8159999847412109, 'precision': 0.5225988700564972, 'recall': 0.925, 'f1': 0.6678700361010831, 'roc_auc': 0.925775, 'pr_auc': 0.7450723166606583}
+2025-03-17 01:12:58,533 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 01:12:58,534 - zkml.federated - INFO - Calculated class weights: tensor([0.6165, 2.6468])
+2025-03-17 01:12:59,638 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.5316
+2025-03-17 01:13:00,697 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4188
+2025-03-17 01:13:02,418 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3813
+2025-03-17 01:13:02,524 - zkml.federated - INFO - Local update computed in 3.99 seconds
+2025-03-17 01:13:02,524 - zkml.federated - INFO - Average loss: 0.4439, DP noise scale: 0.048448
+2025-03-17 01:13:02,526 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:13:02,528 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:13:03,707 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.5303
+2025-03-17 01:13:04,806 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4778
+2025-03-17 01:13:06,065 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4432
+2025-03-17 01:13:06,224 - zkml.federated - INFO - Local update computed in 3.70 seconds
+2025-03-17 01:13:06,225 - zkml.federated - INFO - Average loss: 0.4837, DP noise scale: 0.048448
+2025-03-17 01:13:06,226 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:13:06,230 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:13:07,660 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.4593
+2025-03-17 01:13:08,858 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.3788
+2025-03-17 01:13:10,162 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3621
+2025-03-17 01:13:10,270 - zkml.federated - INFO - Local update computed in 4.04 seconds
+2025-03-17 01:13:10,271 - zkml.federated - INFO - Average loss: 0.4000, DP noise scale: 0.048448
+2025-03-17 01:13:10,272 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 01:13:10,297 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 01:13:11,336 - medical_diagnosis - INFO - Round 7/50
+2025-03-17 01:13:11,337 - medical_diagnosis - INFO - Average Loss: 0.4426
+2025-03-17 01:13:11,337 - medical_diagnosis - INFO - Test Metrics: {'accuracy': 0.8460000157356262, 'precision': 0.5845588235294118, 'recall': 0.795, 'f1': 0.6737288135593221, 'roc_auc': 0.9219187500000001, 'pr_auc': 0.7372965196661603}
+2025-03-17 01:13:11,337 - medical_diagnosis - INFO - Early stopping triggered after 7 rounds
+2025-03-17 01:13:15,085 - medical_diagnosis - INFO - 
+Training completed!
+2025-03-17 01:13:15,085 - medical_diagnosis - INFO - Best performance at round 2
+2025-03-17 01:13:15,086 - medical_diagnosis - INFO - Best test metrics:
+2025-03-17 01:13:15,086 - medical_diagnosis - INFO - accuracy: 0.8600
+2025-03-17 01:13:15,086 - medical_diagnosis - INFO - precision: 0.6200
+2025-03-17 01:13:15,087 - medical_diagnosis - INFO - recall: 0.7750
+2025-03-17 01:13:15,087 - medical_diagnosis - INFO - f1: 0.6889
+2025-03-17 01:13:15,087 - medical_diagnosis - INFO - roc_auc: 0.9287
+2025-03-17 01:13:15,087 - medical_diagnosis - INFO - pr_auc: 0.7554
+2025-03-17 01:39:32,377 - medical_diagnosis - INFO - Results will be saved to: /home/afazzat/Desktop/zkml/results/run_20250317_013932
+2025-03-17 01:39:32,378 - medical_diagnosis - INFO - Loading zkml modules...
+2025-03-17 01:39:36,262 - medical_diagnosis - INFO - Generating 5000 synthetic medical data samples...
+2025-03-17 01:39:36,310 - medical_diagnosis - INFO - Generated features shape: (5000, 27)
+2025-03-17 01:39:36,311 - medical_diagnosis - INFO - Class distribution: [4000 1000]
+2025-03-17 01:39:36,671 - medical_diagnosis - INFO - Feature ranges:
+                0            1            2   ...           24           25           26
+count  5000.000000  5000.000000  5000.000000  ...  5000.000000  5000.000000  5000.000000
+mean     50.146698   120.433943    99.845242  ...     0.093468     3.549452     2.262201
+std      15.269973    20.083096    25.108627  ...     0.234303    12.818078     5.686330
+min      -8.836004    44.503086     6.830157  ...     0.000000  -735.720090  -273.294383
+25%      39.867878   107.132143    82.515124  ...     0.000000     2.140303     0.942321
+50%      50.189960   120.255529   100.081746  ...     0.000000     2.980188     1.737008
+75%      60.604615   133.630529   117.429175  ...     0.000000     4.140974     2.857893
+max     108.893566   199.905787   193.706541  ...     1.738034   332.861482   245.258255
+
+[8 rows x 27 columns]
+2025-03-17 01:39:38,374 - medical_diagnosis - INFO - Splitting data among 3 parties...
+2025-03-17 01:39:38,438 - medical_diagnosis - INFO - Party 0 data shape: (1334, 27)
+2025-03-17 01:39:38,440 - medical_diagnosis - INFO - Party 0 class distribution: [1082  252]
+2025-03-17 01:39:38,440 - medical_diagnosis - INFO - Party 1 data shape: (1333, 27)
+2025-03-17 01:39:38,441 - medical_diagnosis - INFO - Party 1 class distribution: [1059  274]
+2025-03-17 01:39:38,441 - medical_diagnosis - INFO - Party 2 data shape: (1333, 27)
+2025-03-17 01:39:38,441 - medical_diagnosis - INFO - Party 2 class distribution: [1059  274]
+2025-03-17 01:39:44,547 - zkml.federated - INFO - Initialized SecureFederatedLearner with 3 parties
+2025-03-17 01:39:44,548 - zkml.federated - INFO - DP parameters: epsilon=1.0, delta=1e-05
+2025-03-17 01:39:44,548 - zkml.federated - INFO - Secure aggregation: True
+2025-03-17 01:39:44,549 - medical_diagnosis - INFO - Starting federated training...
+2025-03-17 01:39:44,552 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 01:39:44,558 - zkml.federated - INFO - Calculated class weights: tensor([0.6165, 2.6468])
+2025-03-17 01:39:46,756 - zkml.federated - INFO - Epoch 1/3 - Loss: 16.9369
+2025-03-17 01:39:48,984 - zkml.federated - INFO - Epoch 2/3 - Loss: 1.9351
+2025-03-17 01:39:51,161 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.8619
+2025-03-17 01:39:51,376 - zkml.federated - INFO - Local update computed in 6.82 seconds
+2025-03-17 01:39:51,376 - zkml.federated - INFO - Average loss: 6.5780, DP noise scale: 0.048448
+2025-03-17 01:39:51,386 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:39:51,391 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:39:53,200 - zkml.federated - INFO - Epoch 1/3 - Loss: 3.7710
+2025-03-17 01:39:55,091 - zkml.federated - INFO - Epoch 2/3 - Loss: 1.1093
+2025-03-17 01:39:56,971 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.6761
+2025-03-17 01:39:57,186 - zkml.federated - INFO - Local update computed in 5.80 seconds
+2025-03-17 01:39:57,187 - zkml.federated - INFO - Average loss: 1.8521, DP noise scale: 0.048448
+2025-03-17 01:39:57,188 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:39:57,193 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:39:59,018 - zkml.federated - INFO - Epoch 1/3 - Loss: 1.4049
+2025-03-17 01:40:00,811 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.6058
+2025-03-17 01:40:03,625 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.5040
+2025-03-17 01:40:03,808 - zkml.federated - INFO - Local update computed in 6.62 seconds
+2025-03-17 01:40:03,809 - zkml.federated - INFO - Average loss: 0.8382, DP noise scale: 0.048448
+2025-03-17 01:40:03,810 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 01:40:03,855 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 01:40:05,311 - medical_diagnosis - INFO - Round 1/50
+2025-03-17 01:40:05,312 - medical_diagnosis - INFO - Average Loss: 3.0894
+2025-03-17 01:40:05,312 - medical_diagnosis - INFO - Test Metrics: {'accuracy': 0.6790000200271606, 'precision': 0.3825242718446602, 'recall': 0.985, 'f1': 0.5510489510489511, 'roc_auc': 0.927175, 'pr_auc': 0.7502165937240948}
+2025-03-17 01:40:05,314 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 01:40:05,318 - zkml.federated - INFO - Calculated class weights: tensor([0.6165, 2.6468])
+2025-03-17 01:40:07,246 - zkml.federated - INFO - Epoch 1/3 - Loss: 1.1093
+2025-03-17 01:40:09,171 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.5628
+2025-03-17 01:40:11,091 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.5177
+2025-03-17 01:40:11,257 - zkml.federated - INFO - Local update computed in 5.94 seconds
+2025-03-17 01:40:11,258 - zkml.federated - INFO - Average loss: 0.7300, DP noise scale: 0.048448
+2025-03-17 01:40:11,259 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:40:11,263 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:40:13,202 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.8436
+2025-03-17 01:40:15,186 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.5260
+2025-03-17 01:40:17,152 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4482
+2025-03-17 01:40:17,307 - zkml.federated - INFO - Local update computed in 6.05 seconds
+2025-03-17 01:40:17,308 - zkml.federated - INFO - Average loss: 0.6059, DP noise scale: 0.048448
+2025-03-17 01:40:17,309 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:40:17,313 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:40:19,257 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.7541
+2025-03-17 01:40:21,222 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4906
+2025-03-17 01:40:23,153 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.5031
+2025-03-17 01:40:23,328 - zkml.federated - INFO - Local update computed in 6.02 seconds
+2025-03-17 01:40:23,328 - zkml.federated - INFO - Average loss: 0.5826, DP noise scale: 0.048448
+2025-03-17 01:40:23,329 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 01:40:23,376 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 01:40:24,879 - medical_diagnosis - INFO - Round 2/50
+2025-03-17 01:40:24,880 - medical_diagnosis - INFO - Average Loss: 0.6395
+2025-03-17 01:40:24,881 - medical_diagnosis - INFO - Test Metrics: {'accuracy': 0.8600000143051147, 'precision': 0.62, 'recall': 0.775, 'f1': 0.6888888888888889, 'roc_auc': 0.9287000000000001, 'pr_auc': 0.7554038673250802}
+2025-03-17 01:40:24,883 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 01:40:24,888 - zkml.federated - INFO - Calculated class weights: tensor([0.6165, 2.6468])
+2025-03-17 01:40:26,589 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.7414
+2025-03-17 01:40:28,261 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4663
+2025-03-17 01:40:29,991 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4536
+2025-03-17 01:40:30,147 - zkml.federated - INFO - Local update computed in 5.26 seconds
+2025-03-17 01:40:30,147 - zkml.federated - INFO - Average loss: 0.5538, DP noise scale: 0.048448
+2025-03-17 01:40:30,149 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:40:30,153 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:40:31,879 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.6904
+2025-03-17 01:40:33,709 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.5316
+2025-03-17 01:40:35,582 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4608
+2025-03-17 01:40:35,757 - zkml.federated - INFO - Local update computed in 5.61 seconds
+2025-03-17 01:40:35,758 - zkml.federated - INFO - Average loss: 0.5609, DP noise scale: 0.048448
+2025-03-17 01:40:35,760 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:40:35,766 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:40:37,593 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.6495
+2025-03-17 01:40:39,435 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4213
+2025-03-17 01:40:41,276 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4023
+2025-03-17 01:40:41,488 - zkml.federated - INFO - Local update computed in 5.73 seconds
+2025-03-17 01:40:41,489 - zkml.federated - INFO - Average loss: 0.4910, DP noise scale: 0.048448
+2025-03-17 01:40:41,491 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 01:40:41,541 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 01:40:43,088 - medical_diagnosis - INFO - Round 3/50
+2025-03-17 01:40:43,089 - medical_diagnosis - INFO - Average Loss: 0.5352
+2025-03-17 01:40:43,089 - medical_diagnosis - INFO - Test Metrics: {'accuracy': 0.7749999761581421, 'precision': 0.46958637469586373, 'recall': 0.965, 'f1': 0.6317512274959084, 'roc_auc': 0.92855, 'pr_auc': 0.7541683276156079}
+2025-03-17 01:40:43,093 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 01:40:43,098 - zkml.federated - INFO - Calculated class weights: tensor([0.6165, 2.6468])
+2025-03-17 01:40:45,047 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.7166
+2025-03-17 01:40:46,985 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4828
+2025-03-17 01:40:48,944 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4598
+2025-03-17 01:40:49,093 - zkml.federated - INFO - Local update computed in 6.00 seconds
+2025-03-17 01:40:49,094 - zkml.federated - INFO - Average loss: 0.5531, DP noise scale: 0.048448
+2025-03-17 01:40:49,095 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:40:49,100 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:40:51,066 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.8076
+2025-03-17 01:40:53,051 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.5937
+2025-03-17 01:40:55,083 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.5779
+2025-03-17 01:40:55,267 - zkml.federated - INFO - Local update computed in 6.17 seconds
+2025-03-17 01:40:55,268 - zkml.federated - INFO - Average loss: 0.6597, DP noise scale: 0.048448
+2025-03-17 01:40:55,270 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:40:55,275 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:40:57,239 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.5703
+2025-03-17 01:40:59,237 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4755
+2025-03-17 01:41:01,144 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4190
+2025-03-17 01:41:01,291 - zkml.federated - INFO - Local update computed in 6.02 seconds
+2025-03-17 01:41:01,292 - zkml.federated - INFO - Average loss: 0.4883, DP noise scale: 0.048448
+2025-03-17 01:41:01,293 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 01:41:01,331 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 01:41:02,689 - medical_diagnosis - INFO - Round 4/50
+2025-03-17 01:41:02,689 - medical_diagnosis - INFO - Average Loss: 0.5670
+2025-03-17 01:41:02,690 - medical_diagnosis - INFO - Test Metrics: {'accuracy': 0.8330000042915344, 'precision': 0.5523809523809524, 'recall': 0.87, 'f1': 0.6757281553398059, 'roc_auc': 0.92213125, 'pr_auc': 0.7437424163655499}
+2025-03-17 01:41:02,694 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 01:41:02,698 - zkml.federated - INFO - Calculated class weights: tensor([0.6165, 2.6468])
+2025-03-17 01:41:04,566 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.5651
+2025-03-17 01:41:06,409 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4033
+2025-03-17 01:41:08,254 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3974
+2025-03-17 01:41:08,412 - zkml.federated - INFO - Local update computed in 5.72 seconds
+2025-03-17 01:41:08,413 - zkml.federated - INFO - Average loss: 0.4553, DP noise scale: 0.048448
+2025-03-17 01:41:08,415 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:41:08,419 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:41:10,311 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.5568
+2025-03-17 01:41:12,174 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4472
+2025-03-17 01:41:14,062 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4160
+2025-03-17 01:41:14,221 - zkml.federated - INFO - Local update computed in 5.81 seconds
+2025-03-17 01:41:14,222 - zkml.federated - INFO - Average loss: 0.4733, DP noise scale: 0.048448
+2025-03-17 01:41:14,223 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:41:14,227 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:41:16,150 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.5085
+2025-03-17 01:41:18,073 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.3740
+2025-03-17 01:41:20,013 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3950
+2025-03-17 01:41:20,169 - zkml.federated - INFO - Local update computed in 5.95 seconds
+2025-03-17 01:41:20,170 - zkml.federated - INFO - Average loss: 0.4259, DP noise scale: 0.048448
+2025-03-17 01:41:20,171 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 01:41:20,207 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 01:41:21,636 - medical_diagnosis - INFO - Round 5/50
+2025-03-17 01:41:21,637 - medical_diagnosis - INFO - Average Loss: 0.4515
+2025-03-17 01:41:21,637 - medical_diagnosis - INFO - Test Metrics: {'accuracy': 0.8209999799728394, 'precision': 0.5304347826086957, 'recall': 0.915, 'f1': 0.671559633027523, 'roc_auc': 0.92696875, 'pr_auc': 0.754182981672806}
+2025-03-17 01:41:21,640 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 01:41:21,645 - zkml.federated - INFO - Calculated class weights: tensor([0.6165, 2.6468])
+2025-03-17 01:41:23,556 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.5612
+2025-03-17 01:41:25,433 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4151
+2025-03-17 01:41:27,380 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3907
+2025-03-17 01:41:27,530 - zkml.federated - INFO - Local update computed in 5.89 seconds
+2025-03-17 01:41:27,530 - zkml.federated - INFO - Average loss: 0.4557, DP noise scale: 0.048448
+2025-03-17 01:41:27,532 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:41:27,537 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:41:29,478 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.6663
+2025-03-17 01:41:31,406 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4446
+2025-03-17 01:41:33,298 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4216
+2025-03-17 01:41:33,483 - zkml.federated - INFO - Local update computed in 5.95 seconds
+2025-03-17 01:41:33,483 - zkml.federated - INFO - Average loss: 0.5108, DP noise scale: 0.048448
+2025-03-17 01:41:33,484 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:41:33,489 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:41:35,374 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.4697
+2025-03-17 01:41:37,267 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4050
+2025-03-17 01:41:39,201 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4148
+2025-03-17 01:41:39,361 - zkml.federated - INFO - Local update computed in 5.88 seconds
+2025-03-17 01:41:39,362 - zkml.federated - INFO - Average loss: 0.4298, DP noise scale: 0.048448
+2025-03-17 01:41:39,363 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 01:41:39,409 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 01:41:40,824 - medical_diagnosis - INFO - Round 6/50
+2025-03-17 01:41:40,825 - medical_diagnosis - INFO - Average Loss: 0.4654
+2025-03-17 01:41:40,826 - medical_diagnosis - INFO - Test Metrics: {'accuracy': 0.8159999847412109, 'precision': 0.5225988700564972, 'recall': 0.925, 'f1': 0.6678700361010831, 'roc_auc': 0.925775, 'pr_auc': 0.7450723166606583}
+2025-03-17 01:41:40,828 - zkml.federated - INFO - Computing local update on 1334 samples
+2025-03-17 01:41:40,832 - zkml.federated - INFO - Calculated class weights: tensor([0.6165, 2.6468])
+2025-03-17 01:41:42,748 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.5316
+2025-03-17 01:41:44,835 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4188
+2025-03-17 01:41:46,768 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3813
+2025-03-17 01:41:46,923 - zkml.federated - INFO - Local update computed in 6.09 seconds
+2025-03-17 01:41:46,924 - zkml.federated - INFO - Average loss: 0.4439, DP noise scale: 0.048448
+2025-03-17 01:41:46,925 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:41:46,929 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:41:48,864 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.5303
+2025-03-17 01:41:50,656 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.4778
+2025-03-17 01:41:52,402 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.4432
+2025-03-17 01:41:52,562 - zkml.federated - INFO - Local update computed in 5.64 seconds
+2025-03-17 01:41:52,562 - zkml.federated - INFO - Average loss: 0.4837, DP noise scale: 0.048448
+2025-03-17 01:41:52,564 - zkml.federated - INFO - Computing local update on 1333 samples
+2025-03-17 01:41:52,569 - zkml.federated - INFO - Calculated class weights: tensor([0.6294, 2.4325])
+2025-03-17 01:41:54,240 - zkml.federated - INFO - Epoch 1/3 - Loss: 0.4593
+2025-03-17 01:41:55,861 - zkml.federated - INFO - Epoch 2/3 - Loss: 0.3788
+2025-03-17 01:41:57,545 - zkml.federated - INFO - Epoch 3/3 - Loss: 0.3621
+2025-03-17 01:41:57,709 - zkml.federated - INFO - Local update computed in 5.14 seconds
+2025-03-17 01:41:57,710 - zkml.federated - INFO - Average loss: 0.4000, DP noise scale: 0.048448
+2025-03-17 01:41:57,711 - zkml.federated - INFO - Aggregating updates from 3 parties
+2025-03-17 01:41:57,753 - zkml.federated - INFO - Updates aggregated successfully
+2025-03-17 01:41:59,133 - medical_diagnosis - INFO - Round 7/50
+2025-03-17 01:41:59,133 - medical_diagnosis - INFO - Average Loss: 0.4426
+2025-03-17 01:41:59,134 - medical_diagnosis - INFO - Test Metrics: {'accuracy': 0.8460000157356262, 'precision': 0.5845588235294118, 'recall': 0.795, 'f1': 0.6737288135593221, 'roc_auc': 0.9219187500000001, 'pr_auc': 0.7372965196661603}
+2025-03-17 01:41:59,134 - medical_diagnosis - INFO - Early stopping triggered after 7 rounds
+2025-03-17 01:42:04,712 - medical_diagnosis - INFO - 
+Training completed!
+2025-03-17 01:42:04,713 - medical_diagnosis - INFO - Best performance at round 2
+2025-03-17 01:42:04,713 - medical_diagnosis - INFO - Best test metrics:
+2025-03-17 01:42:04,714 - medical_diagnosis - INFO - accuracy: 0.8600
+2025-03-17 01:42:04,714 - medical_diagnosis - INFO - precision: 0.6200
+2025-03-17 01:42:04,715 - medical_diagnosis - INFO - recall: 0.7750
+2025-03-17 01:42:04,715 - medical_diagnosis - INFO - f1: 0.6889
+2025-03-17 01:42:04,715 - medical_diagnosis - INFO - roc_auc: 0.9287
+2025-03-17 01:42:04,716 - medical_diagnosis - INFO - pr_auc: 0.7554

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zkml"
+version = "0.1.0"
+description = "Zero-Knowledge Machine Learning Framework"
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=2.0.0",
+    "numpy>=1.21.0",
+    "pandas>=1.5.0",
+    "scikit-learn>=1.0.0",
+    "cryptography>=41.0.0",
+    "web3>=6.0.0",
+    "py-ecc>=6.0.0",  # For BN254 curve operations
+    "flwr>=1.0.0",    # For federated learning
+    "tqdm>=4.65.0",
+    "matplotlib>=3.5.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"] 
